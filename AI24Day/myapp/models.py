@@ -9,8 +9,8 @@ class Profile(models.Model):
     
     ville = models.CharField(max_length=100, blank=True, null=True)
     etablissement = models.CharField(max_length=100, blank=True, null=True)
-    niveau = models.CharField(max_length=50, blank=True, null=True)
-    specialite = models.CharField(max_length=100, blank=True, null=True)
+    niveau = models.CharField(max_length=50, blank=True, null=True) 
+    specialite = models.CharField(max_length=100, blank=True, null=True)# select box ? licence master ing doctorat ?
     entreprise = models.CharField(max_length=100, blank=True, null=True)
     
     mode_de_participation = models.CharField(

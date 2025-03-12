@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'myapp.apps.MyappConfig',
+    'myapp',
 ]
 
 MIDDLEWARE = [
@@ -121,7 +121,7 @@ STATIC_ROOT= os.path.join(BASE_DIR, 'static')
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS=[
-    os.path.join(BASE_DIR ,'HR_project/static'),
+    os.path.join(BASE_DIR ,'AI24DAY/static'),
 ]
 
 # Default primary key field type
