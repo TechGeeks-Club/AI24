@@ -1,9 +1,12 @@
+
 body {
-    height:600vh ;
-    width:auto;
+    width: 100%;
+    height: auto;
     background: black;
     margin: 0;
+    overflow-x: hidden; 
 }
+
 section {
     width: 100%;
     max-width: 1440px;
@@ -329,6 +332,12 @@ section * {
     font-weight: 100 900; 
     font-stretch: 75% 325%; 
 }
+
+
+
+
+
+
 .circle-button {
     margin: 4rem 0 0 2rem;
     display: inline-flex;
@@ -341,9 +350,10 @@ section * {
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
-    overflow: visible; 
-    z-index: 1; 
+    overflow: hidden; 
+    z-index: 1;
 }
+
 .circle-button a {
     z-index: 1;
     display: flex;
@@ -354,30 +364,30 @@ section * {
     padding-left: 18px;
     transform: translateX(-8px);
 }
+
 .btn-text {
     font-family: 'kontora';
     white-space: nowrap;
     position: relative;
-    color: transparent;
+    color: white;
     mix-blend-mode: lighten;
     transform: translateX(14px);
-    background: linear-gradient(
-        to right,
-        black 40%,
-        white 40%
-    );
-    -webkit-background-clip: text;
-    background-clip: text;
     transition: all 0.3s ease;
 }
+
 .btn-text::before {
-    content: "JOIN US";
+    content: "JO";
     position: absolute;
     left: 0;
-    color: black;
-    clip-path: inset(0 72% 0 0); 
-    transition: clip-path 0.3s ease;
-    z-index: -1;
+    color: black; 
+    z-index: 2;
+}
+.btn-text::after {
+    content: "IN US";
+    position: absolute;
+    left: 12px; 
+    color: white;
+    z-index: 1;
 }
 .arrow {
     font-family: 'Poppins';
@@ -394,12 +404,11 @@ section * {
     background-image: linear-gradient(45deg, #DFFE01, #30C35D);
 }
 .circle-button:hover .btn-text {
-    background: black;
-    -webkit-background-clip: text;
-    background-clip: text;
+    color: black;
 }
-.circle-button:hover .btn-text::before {
-    clip-path: inset(0 0 0 0);
+.circle-button:hover .btn-text::before,
+.circle-button:hover .btn-text::after {
+    display: none;
 }
 .circle-button:hover .arrow {
     opacity: 1;
@@ -407,6 +416,10 @@ section * {
     transform: translateX(5px);
     margin-left: 15px;
 }
+
+
+
+
 .espace{
     padding: 1rem 0rem;
 }
@@ -478,7 +491,7 @@ section * {
     width: 75%;
   }
   .middle-image {
-    width: 150px; 
+    width: 250px; 
     height: auto; 
     border-radius: 15px;
   }
@@ -1140,4 +1153,5 @@ section * {
     position: relative;
     top: 9rem;
 }
+
 
