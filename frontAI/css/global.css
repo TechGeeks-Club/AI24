@@ -1,0 +1,76 @@
+body {
+    width: 100%;
+    height: auto;
+    /* background: black; */
+    background: radial-gradient(ellipse 177.46% 352.09% at 50.00% 38.36%, black 0%, #09173C 63%, #1C2140 89%);
+    margin: 0;
+    overflow-x: hidden; 
+}
+
+section {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+}
+@media (max-width: 1200px) {
+    section {
+        padding: 15px;
+    }
+}
+@media (max-width: 768px) {
+    section {
+        padding: 10px;
+    }
+}
+/* section * {
+    max-width: 100%;
+    box-sizing: inherit;
+} */
+
+@font-face {
+    font-family: 'MaPoliceVariable';
+    src: url('../images/fonts/PPNeueMachina-InktrapRegular.otf') format('truetype-variations');
+    font-weight: 100 900; 
+    font-stretch: 75% 325%; 
+}
+
+@font-face {
+    font-family: 'Pcenter';
+    src: url('../images/fonts/PPNeueMachina-InktrapLight.otf') format('truetype-variations');
+    font-weight: 100 900; 
+    font-stretch: 75% 325%; 
+}
+
+@font-face {
+    font-family: 'PPNeueMachina-PlainLight';
+    src: url('../images/fonts/PPNeueMachina-PlainLight.otf') format('truetype-variations');
+    font-weight: 100 900; 
+    font-stretch: 75% 325%; 
+}
+
+@font-face {
+    font-family: 'kontora';
+    src: url('../images/fonts/Kontora\ Medium.otf') format('truetype-variations');
+    font-weight: 100 900; 
+    font-stretch: 75% 325%; 
+}
+
+@font-face {
+    font-family: 'kontora-bold';
+    src: url('../images/fonts/Kontora\ Bold.otf') format('truetype-variations');
+    font-weight: 100 900; 
+    font-stretch: 75% 325%; 
+}
+
+.white-text {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.raleway {
+    font-family: "Raleway", sans-serif;
+}
