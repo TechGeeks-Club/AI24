@@ -7,6 +7,24 @@ body {
     overflow-x: hidden; 
 }
 
+.triangle-logo-container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    gap: 15px;
+}
+.left-triangle {
+    display: inline-block;
+    margin-right: 10px;
+}
+.triangle-img {
+    height: 300px; 
+    width: 300px;
+    transform: translateY(2px);
+}
+
 .circle-button {
     /* margin: 4rem 0 0 2rem; */
     display: inline-flex;

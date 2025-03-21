@@ -46,15 +46,15 @@ section {
     align-items: center;
     gap: 30px;
 } */
-.triangle-logo-container {
+/* .triangle-logo-container {
     display: flex;
     position: absolute;
     top: 0;
     left: 0;
     align-items: center;
     gap: 15px;
-}
-.left-triangle {
+} */
+/* .left-triangle {
     display: inline-block;
     margin-right: 10px;
 }
@@ -62,7 +62,7 @@ section {
     height: 190px; 
     width: 190px;
     transform: translateY(2px);
-}
+} */
 /* .main-logo img {
     position: absolute;
     top: 40px;

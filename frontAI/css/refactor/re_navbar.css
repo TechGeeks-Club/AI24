@@ -6,7 +6,7 @@
     gap: 30px;
 } */
 .navbar {
-    padding: 20px 40px;
+    padding: 20px 130px;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
@@ -23,7 +23,7 @@
 
 .main-logo img {
 
-    height: 50px;
+    height: 77px;
     width: auto;
     transition: opacity 0.3s ease;
 }
@@ -32,7 +32,7 @@
     list-style: none;
     display: flex;
     align-items: center;
-    gap: 35px;
+    gap: 80px;
    
 }
 .navlinks li a {
@@ -40,7 +40,7 @@
     text-decoration: none;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1.275rem;
     position: relative;
     padding-bottom: 5px;
 }
