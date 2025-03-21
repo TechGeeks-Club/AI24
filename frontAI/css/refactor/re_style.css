@@ -173,14 +173,14 @@ section {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(20px); }
 }
-.img-robot {
+/* .img-robot {
     position: absolute;
     left: 240px;
     top: 80px;
     width: 190vw;
     height: 115vh;
     z-index: 1; 
-}
+} */
 .white-text {
     color: white;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
@@ -194,14 +194,14 @@ section {
 .font-family{
     font-family: 'MaPoliceVariable';  
 }
-.img-robot{
+/* .img-robot{
     display: flex;
     position: absolute;
     left: 240px;
     top: 80px;
     width: 190vw;
     height: 115vh;
-}
+} */
 .Text-robot{
     font-family: 'Pcenter';
     font-size: 1rem;

@@ -1,0 +1,21 @@
+.robot-section{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+	width: 100%;
+	
+}
+.robot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+	width: 86%;
+}
+#robot-img{
+	width: 86%;
+	height: auto;
+}
