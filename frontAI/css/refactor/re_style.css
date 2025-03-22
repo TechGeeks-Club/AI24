@@ -698,13 +698,13 @@ section {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
   }
-  .arrow-down {
+  /* .arrow-down {
     color:#c5ff00;
     font-size: 6.5rem;
     width: 3%;
     height: 45vh;
     filter: drop-shadow(0 0 10px #c5ff00);
-}
+} */
 @media (max-width: 768px) {
     .main-container {
       flex-direction: column; 
@@ -761,10 +761,10 @@ section {
       border-radius: 10px; 
     }
   
-    .arrow-down {
+    /* .arrow-down {
       font-size: 4rem; 
       height: auto;
-    }
+    } */
   }
 
  .five-content{
