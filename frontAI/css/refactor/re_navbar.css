@@ -16,15 +16,14 @@
 }
 
 .main-logo {
-
     display: flex;
     align-items: center;    
 }
 
 .main-logo img {
 
-    height: 77px;
-    width: auto;
+    height: auto;
+    width: 430px;
     transition: opacity 0.3s ease;
 }
 
@@ -59,4 +58,17 @@
 
 .navlinks li a:hover::after {
     width: 100%;
+}
+
+@media (max-width: 1300px) {
+    .nav-btns {
+        display: none;
+    }
+    .main-logo img {
+
+        height: auto;
+        width: 80%;
+        min-width: 320px;
+        transition: opacity 0.3s ease;
+    }
 }

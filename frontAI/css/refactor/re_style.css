@@ -479,7 +479,7 @@ section {
     transform: translateX(-8px);
 } */
 
-.btn-text {
+/* .btn-text {
     font-family: 'kontora';
     white-space: nowrap;
     position: relative;
@@ -511,7 +511,7 @@ section {
     color: white;
     opacity: 0;
     transition: all 0.3s ease;
-}
+} */
 /* .circle-button:hover {
     width: 160px;
     border-radius: 25px;

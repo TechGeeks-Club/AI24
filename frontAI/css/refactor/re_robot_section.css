@@ -5,6 +5,7 @@
 	align-content: center;
 	flex-direction: column;
 	width: 100%;
+	padding: 0;
 	
 }
 .robot{
@@ -18,4 +19,9 @@
 #robot-img{
 	width: 86%;
 	height: auto;
+}
+#back-robot {
+	width: 60%;
+	height: auto;
+	position: absolute;
 }

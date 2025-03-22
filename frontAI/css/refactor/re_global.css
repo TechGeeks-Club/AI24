@@ -51,7 +51,7 @@ section {
     cursor: pointer;
     transition: all 0.3s ease;
     /* position: relative; */
-    overflow: hidden; 
+    /* overflow: hidden;  */
     /* z-index: 1; */
 }
 
@@ -83,4 +83,38 @@ section {
     color: black;
     transform: translateX(5px);
     margin-left: 15px;
+}
+
+.btn-text {
+    font-family: 'kontora';
+    white-space: nowrap;
+    position: relative;
+    color: white;
+    mix-blend-mode: lighten;
+    transform: translateX(14px);
+    transition: all 0.3s ease;
+}
+
+.btn-text::before {
+    content: "JO";
+    position: absolute;
+    left: 0;
+    color: black; 
+    z-index: 2;
+}
+/* .btn-text::after {
+    content: "IN US";
+    position: absolute;
+    left: 12px; 
+    color: white;
+    z-index: 1;
+} */
+.arrow {
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-left: 20px;
+    color: white;
+    opacity: 0;
+    transition: all 0.3s ease;
 }
