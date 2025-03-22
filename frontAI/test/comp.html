@@ -1,6 +1,4 @@
 <div class="parent">
-	<img src="../images/modified.png" alt="Shared Image" class="shared-image">
-
 	<div class="div1"> </div>
 	<div class="div2"> </div>
 	<div class="div3"> </div>
@@ -20,14 +18,14 @@
 		grid-row-gap: 0px;
 		height: 100vh;
 			width: 100%;
-		}
+	}
 		
 		.div1 { grid-area: 4 / 1 / 11 / 3; background-color: #f8b400; }
 		.div2 { grid-area: 1 / 1 / 4 / 3; background-color: #ff5733; }
 		.div3 { grid-area: 1 / 3 / 6 / 5; background-color: #33ff57; }
-		.div4 { grid-area: 6 / 3 / 11 / 5; background-color: #3357ff; }
-		.div5 { grid-area: 7 / 5 / 11 / 7; background-color: #ff33a8; }
-		.div6 { grid-area: 1 / 5 / 7 / 7; background-color: #a833ff; }
+		.div4 { grid-area: 6 / 3 / 11 / 5 }
+		.div5 { grid-area: 7 / 5 / 11 / 7 }
+		.div6 { grid-area: 1 / 5 / 7 / 7 }
 		.div7 { grid-area: 8 / 7 / 11 / 9; background-color: #33fff8; }
 		.div8 { grid-area: 1 / 7 / 8 / 9; background-color: #f833ff; }
 
@@ -69,6 +67,7 @@
 			mix-blend-mode: multiply; /* Blend the image with the background */
 			opacity: 0.9; /* Adjust visibility */
 			border-radius: 10%;
+			filter: grayscale(1);
 		}
 
 		.div6::before{
