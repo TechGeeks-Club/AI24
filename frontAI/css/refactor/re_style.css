@@ -231,7 +231,7 @@ section {
     position: absolute;
     top: 600px;
 } */
-.p-left{
+/* .p-left{
     position: relative;
     display: inline-block;
     font-family: 'Pcenter';
@@ -253,7 +253,7 @@ section {
     background-clip: text;
     color: transparent;
     z-index: -1;
-}
+} */
 @font-face {
     font-family: 'Pcenter';
     src: url('../images/fonts/PPNeueMachina-InktrapLight.otf') format('truetype-variations');
@@ -575,26 +575,26 @@ section {
     border-radius: 15px 15px 0 0; 
     margin-bottom: 20px; 
   }
-  .hackathon-content {
+  /* .hackathon-content {
     position: relative;
     z-index: 2;
     text-align: left;
     width: 100%;
-  }
-  .hackathon-title {
+  } */
+  /* .hackathon-title {
     font-family: 'kontora';
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 5px;
-  }
+  } */
   
-  .hackathon-participants {
+  /* .hackathon-participants {
     font-family: 'kontora';
     color: white;
     font-size: 0.9rem;
     opacity: 0.8;
-  }
+  } */
   .right-container {
     display: flex;
     flex-direction: column;
@@ -643,19 +643,19 @@ section {
     padding: 10px;
     z-index: 2;
   }
-  .card-title {
+  /* .card-title {
     font-family: 'kontora';
     max-width: 25vw;
     font-size: 1.3rem;
     font-weight: bold;
     margin-bottom: 5px;
     margin-bottom: 10px;
-  }
-  .card-description {
+  } */
+  /* .card-description {
     font-family: 'kontora';
     font-size: 0.9rem;
     opacity: 0.8;
-  }
+  } */
   .conferences{
     max-width: 20vw;
     color: white;
@@ -705,67 +705,7 @@ section {
     height: 45vh;
     filter: drop-shadow(0 0 10px #c5ff00);
 } */
-@media (max-width: 768px) {
-    .main-container {
-      flex-direction: column; 
-      gap: 20px; 
-      height: auto; 
-      max-height: none; 
-    }
-  
-    .hackathon-container {
-      width: 100%;
-      height: auto; 
-      padding: 15px; 
-    }
-  
-    .hackathon-image {
-      height: 150px; 
-    }
-  
-    .hackathon-title {
-      font-size: 1.2rem; 
-    }
-  
-    .hackathon-participants {
-      font-size: 0.8rem; 
-    }
-  
-    .right-container {
-      width: 100%; 
-      gap: 15px; 
-    }
-  
-    .top-row, .bottom-row {
-      flex-direction: column; 
-      gap: 15px; 
-    }
-  
-    .cardes {
-      width: 100%; 
-      min-height: 150px; 
-    }
-  
-    .card-title {
-      max-width: 100%; 
-      font-size: 1.1rem;
-    }
-  
-    .card-description {
-      font-size: 0.8rem; 
-    }
-  
-    .middle-image {
-      width: 100%; 
-      height: auto; 
-      border-radius: 10px; 
-    }
-  
-    /* .arrow-down {
-      font-size: 4rem; 
-      height: auto;
-    } */
-  }
+
 
  .five-content{
     display: flex;
@@ -942,18 +882,7 @@ section {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
 
-    .card, .card-d {
-        left: 0;
-        top: 0;
-        margin-left: 0;
-        margin-top: 0;
-    }
-}
 .six-conetent{
     height: 40vh;
     margin-top: 13rem;

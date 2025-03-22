@@ -11,9 +11,19 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: "SpaceGrotesk-Light";
+	src: url(../../fonts/SpaceGrotesk-Light-BF65712b4fc80d0.ttf) format("truetype");
+	font-weight: medium;
+	font-style: normal;
+}
+
 .ppnm{
 	font-family: PPNeueMachina;
 }
 .sgm{
 	font-family: SpaceGrotesk-Medium;
+}
+.sgl{
+	font-family: SpaceGrotesk-Light;
 }

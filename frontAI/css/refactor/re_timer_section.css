@@ -37,6 +37,29 @@
   max-width: 50%;
 }
 
+.p-left{
+  position: relative;
+  display: inline-block;
+  flex: 0 1 auto; 
+  font-size: 6.5rem;
+  color:rgba(128, 128, 128, 0.406);
+  margin-right: 20px;
+}
+.p-left::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+      to right,
+      rgba(128, 128, 128, 0.4),
+      transparent
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  z-index: -1;
+}
+
 #decorator_img{
 	position: absolute;
   height: 90vh;
