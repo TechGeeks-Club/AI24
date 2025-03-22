@@ -4,7 +4,16 @@
 	font-weight: bold;
 	font-style: normal;
 }
+@font-face {
+	font-family: "SpaceGrotesk-Medium";
+	src: url(../../fonts/SpaceGrotesk-Regular-BF65712b4fdc934.ttf) format("truetype");
+	font-weight: medium;
+	font-style: normal;
+}
 
 .ppnm{
 	font-family: PPNeueMachina;
+}
+.sgm{
+	font-family: SpaceGrotesk-Medium;
 }

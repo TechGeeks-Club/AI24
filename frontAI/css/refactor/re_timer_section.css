@@ -20,6 +20,13 @@
 	gap: 10rem;
 }
 
+.content-text{
+  margin: 0 0 5% 0;
+}
+.s2t3{
+  font-size: 1.8rem;
+}
+
 .p-center {
 	display: flex;
 	justify-content: center;
