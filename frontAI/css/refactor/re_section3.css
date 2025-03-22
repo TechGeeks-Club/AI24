@@ -59,7 +59,7 @@
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
-	gap: 36%;
+	gap: 20%;
 	padding: 0 10%;
 }
 .div2 {
@@ -90,6 +90,7 @@
 	display: flex;
 	flex-direction: column;
 	padding: 8%;
+	z-index: 99;
 }
 .graid-container div {
 	border-radius: 10%;
@@ -99,7 +100,7 @@
 /* Reveal the image only in these divs */
 .div4, .div6, .div5,.div3, .div7 {
 	position: relative;
-	z-index: 2; /* Ensure they are above the image */
+	z-index: 99; /* Ensure they are above the image */
 }
 
 .div4::before, .div6::before, .div5::before, .div2::before ,.div7::before {
@@ -173,3 +174,14 @@
 	font-size: 1.5rem;
 	margin: 0 0 10% 0;	
 }
+
+
+
+#decorator_img_3{
+	position: absolute;
+	z-index: -1;
+	transform: translateY(430px);
+    left: -100px;
+	height: 400px;
+}
+
