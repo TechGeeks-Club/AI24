@@ -1,6 +1,7 @@
 
 function createSquares(numSquares) {
     const container = document.body;
+
     
     for(let i = 0; i < numSquares; i++) {
         const square = document.createElement('div');
@@ -29,12 +30,12 @@ function createSquares(numSquares) {
 }
 
 // Créer 30 carrés (ajuster selon besoin)
-createSquares(30);
+createSquares(10);
 
 // Redimensionnement responsive
 window.addEventListener('resize', () => {
     document.querySelectorAll('.square').forEach(sq => sq.remove());
-    createSquares(30);
+    createSquares(13);
 });
 
 

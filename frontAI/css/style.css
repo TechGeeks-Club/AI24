@@ -1,4 +1,4 @@
-/* 
+
 body {
     width: 100%;
     height: auto;
@@ -16,9 +16,9 @@ section {
     overflow: hidden;
     position: relative;
 } 
-*/
 
-/* @media (max-width: 1200px) {
+
+@media (max-width: 1200px) {
     section {
         padding: 15px;
     }
@@ -27,11 +27,11 @@ section {
     section {
         padding: 10px;
     }
-} */
-/* section * {
+}
+section * {
     max-width: 100%;
     box-sizing: inherit;
-} */
+}
 .navbar {
     padding: 20px 40px;
     background-color: transparent;
@@ -128,12 +128,12 @@ section {
     background-color: #ffffff;
 }
 
-/* .square {
+.square {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.573);
     animation: fade 5s infinite ease-in-out;
     border-radius: 3px;
-} */
+}
 
 /* Styles pour le responsive */
 @media (max-width: 568px) {

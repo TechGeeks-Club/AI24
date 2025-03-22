@@ -202,10 +202,10 @@ section {
     width: 190vw;
     height: 115vh;
 } */
-.Text-robot{
+/* .Text-robot{
     font-family: 'Pcenter';
     font-size: 1rem;
-    /* background: rgba(26, 26, 26, 0.1); */
+    background: rgba(26, 26, 26, 0.1);
     background-color:#1d336b4c;
     border-radius: 1rem;
     align-items: center;
@@ -218,7 +218,7 @@ section {
     left: 360px;
     top: 500px;
     color: white;
-}
+} */
 .second-content{
     margin-left: 2rem;
     display: flex;
