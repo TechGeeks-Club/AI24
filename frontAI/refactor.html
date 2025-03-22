@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/refactor/re_global.css">
 	<link rel="stylesheet" href="css/refactor/re_navbar.css">
 	<link rel="stylesheet" href="css/refactor/re_robot_section.css">
+	<link rel="stylesheet" href="css/refactor/re_timer_section.css">
 
     <link rel="stylesheet" href="css/refactor/re_style.css">
 
@@ -53,19 +54,76 @@
         </ul>
   </nav>
   <main>
+	<!--! Sections 01 -->
+
 	<section class="robot-section" >
 		<div class="robot">
-
 			<script src="js/script.js" ></script>   
-   
 		  <img src="images/Group 14.png" alt="img" id="robot-img" loading="eager">
 		  <img src="images/Group 79.svg" id="back-robot" loading="lazy"/>
 		  <div  class="Text-robot">Where Innovation Meets Intelligence - AI24 Awaits!</div>
-
-
 	   </div>
+	</section>
+	<!--! Sections 02 -->
+	<section class="timer-section">
+		<div class="second-content">
+			<p class="p-left"><i>V2.0</i></p>
+			<p class="p-center">Unlock the Power of AI - <br>
+				Learn, Innovate, Compete !</p>
+				<div class="img-second-content"></div><br>
+		</div>
+		<img src="images/Group 10.png" id="decorator_img" alt="text" loading="lazy">
+
+		  <div class="third-content">
+			<div class="content-text"> 
+			<p class="medium p-1">3 Days. 1 Mission.</p>
+			 <p class="medium p-2">Shaping the Future of AI.</p>
+			</div>
 	
-	<section>
+		   
+	
+	  <div class="countdown-container">
+		<div class="numbers">
+		  <div class="nbr-days">
+			<span class="qwcountdown font-mono" style="font-size: 4rem;">
+			  <span id="days" style="--qwvalue:0;" aria-live="polite">00</span>
+			</span>
+			<span class="number-label">Days</span>
+		  </div>
+	
+		  <div class="nbr-days">
+			<span class="qwcountdown font-mono" style="font-size: 4rem;">
+			  <span id="hours" style="--qwvalue:0;" aria-live="polite">00</span>
+			</span>
+			<span class="number-label">Hours</span>
+		  </div>
+	
+		  <div class="nbr-days">
+			<span class="qwcountdown font-mono" style="font-size: 4rem;">
+			  <span id="minutes" style="--qwvalue:0;" aria-live="polite">00</span>
+			</span>
+			<span class="number-label">Minutes</span>
+		  </div>
+	
+		  <div class="nbr-days">
+			<span class="qwcountdown font-mono" style="font-size: 4rem;">
+			  <span id="seconds" style="--qwvalue:0;" aria-live="polite">00</span>
+			</span>
+			<span class="number-label">Seconds</span>
+		  </div>
+		</div>
+	  </div>
+	
+	  <script src="js/countDown.js"> </script>
+		  
+		  <button class="circle-button" id="cb-ts">
+			<a href="#">
+				<span class="btn-text">JOIN US</span>
+				<span class="arrow">→</span>
+			</a>
+		</button>
+
+	</section>
   </main>
 
 

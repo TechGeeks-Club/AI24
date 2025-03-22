@@ -219,7 +219,7 @@ section {
     top: 500px;
     color: white;
 } */
-.second-content{
+/* .second-content{
     margin-left: 2rem;
     display: flex;
     justify-content: space-between; 
@@ -230,7 +230,7 @@ section {
     box-sizing: border-box;
     position: absolute;
     top: 600px;
-}
+} */
 .p-left{
     position: relative;
     display: inline-block;
@@ -260,14 +260,14 @@ section {
     font-weight: 100 900; 
     font-stretch: 75% 325%; 
 }
-.p-center {
+/* .p-center {
     color: white;
     flex: 1; 
     font-size: 2rem;
     font-family: 'Pcenter';
     max-width: 600px; 
     padding: 0 20px;
-}
+} */
 .img-second-content {
     position: absolute;
     top: 0px;
@@ -287,7 +287,7 @@ section {
  top:-50px;
  left:-25px;
 }
-.third-content{
+/* .third-content{
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -300,13 +300,13 @@ section {
 }
 .p-2{
     color: #A4E91D;
-}
-.content-text{
+} */
+/* .content-text{
   position: relative;
   top:-50px;
   left: -15px;
   margin-left: 2rem;
-}
+} */
 
 @font-face {
     font-family: 'PPNeueMachina-PlainLight';
@@ -365,13 +365,13 @@ section {
     color: white;
   }
   
-  .countdown-container {
+  /* .countdown-container {
     max-width: 30vw;
     margin-left: 3.4rem;
     border-radius: 10px;
     padding: 30px;
   }
-  
+   */
   @media (max-width: 600px) {
     .numbers {
       flex-wrap: wrap;
