@@ -1,0 +1,10 @@
+@font-face {
+	font-family: "PPNeueMachina";
+	src: url(../../fonts/PPNeueMachina-InktrapLight.otf) format("opentype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+.ppnm{
+	font-family: PPNeueMachina;
+}
