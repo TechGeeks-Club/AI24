@@ -1,0 +1,70 @@
+.section-09{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: fit-content;
+	margin-top: 10%;
+	padding: 0;
+
+	/* padding: 0px 0px 0px 25%; */
+	margin: 10% 0px 0px 0px; 
+}
+
+.logos{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 75%;
+	height: 100Px;
+}
+.logos p {
+	
+    background: white;
+    height: 80%;
+    width: 1px;
+}
+
+#aih-lg{
+	width: 9rem;
+    height: auto;
+}
+#tg-lg{
+	height: 4rem;
+}
+#univ-lg{
+	height: 5rem;
+	margin-right: 10px;
+}
+
+.botm_deco{
+	position: absolute;
+	bottom: 0px;
+	width: 33%;
+}
+
+#bdl{
+	left: 0px;
+}
+#bdr{
+	right: 0px;
+}
+
+#footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+	margin: 0;
+}
+
+#footer p {
+	color: white;
+	font-family: PPNeueMachina;
+	margin: 10% 0 0 0;
+	font-size: 80%;
+	padding-bottom: 13px;
+}
