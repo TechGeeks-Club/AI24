@@ -937,6 +937,9 @@ section * {
     justify-content: center;
 }
 
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .grid-container {
@@ -950,6 +953,9 @@ section * {
         margin-top: 0;
     }
 }
+
+
+
 .six-conetent{
     height: 40vh;
     margin-top: 13rem;
