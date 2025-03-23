@@ -19,7 +19,7 @@
 	<link rel="stylesheet" href="css/refactor/re_section8.css">
 	<link rel="stylesheet" href="css/refactor/re_section9.css">
 
-    <link rel="stylesheet" href="css/refactor/re_style.css">
+    <!-- <link rel="stylesheet" href="css/refactor/re_style.css"> -->
 
     <!--<link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/hero.css">
@@ -43,10 +43,10 @@
 
   <nav class="navbar">
 
-        <a href="#home" class="main-logo">
+        <a href="#home" class="main-logo" style="width: min-content;">
 			<img src="images/logo.png" alt="Main Logo" />
 		</a>
-
+		
         <ul class="navlinks">
             <li class="nav-btns"><a href="#">Description</a></li>
             <li class="nav-btns"><a href="#">Timeline</a></li>
@@ -56,7 +56,7 @@
               <button class="circle-button">
                 <a href="#">
                     <span class="btn-text">JOIN US</span>
-                    <span class="arrow">→</span>
+                    <span class="arrow">&rarr;</span>
                 </a>
             </button>
             </li>
@@ -68,8 +68,13 @@
 	<section class="robot-section" >
 		<div class="robot">
 			<script src="js/script.js" ></script>   
-		  <img src="images/Group 14.png" alt="img" id="robot-img" loading="eager">
+		  <img src="images/Group 14.png" alt="img" id="robot-img" loading="eager" class="img-robot">
 		  <img src="images/Group 79.svg" id="back-robot" loading="lazy"/>
+
+		  <div class="responsive-image-container">
+			<img src="images/Group 78.png" alt="Image pour mobile" class="responsive-only-image">
+		  </div>
+
 		  <div  class="Text-robot">Where Innovation Meets Intelligence - AI24 Awaits!</div>
 	   </div>
 	</section>
