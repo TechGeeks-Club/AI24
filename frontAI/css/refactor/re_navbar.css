@@ -103,6 +103,7 @@
     }
 
     .main-logo img {
+        margin-top: 2rem;
         margin-left: 2.4rem;
         width: 51%;
         min-width: 150px; 
@@ -123,8 +124,12 @@
         padding: 6px 12px; 
         font-size: 0.8rem;
     }
-}
 
+    .navlinks {
+        display: none;
+    }
+
+}
 
 
 @media (max-width: 392px) {
@@ -155,6 +160,7 @@
         display: none;
     }
 
+    
     .circle-button {
         width: 12%; 
         max-width: 40px; 
