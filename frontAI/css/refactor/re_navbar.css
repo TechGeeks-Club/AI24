@@ -60,15 +60,105 @@
     width: 100%;
 }
 
+.triangle-img{
+	max-width: 90%;
+}
+
+
 @media (max-width: 1300px) {
-    .nav-btns {
+    .triangle-img img {
+    max-width: 40%;
+    height: 10vh;
+    }
+
+    .navbar {
+        padding: 10px 23px; 
+    }
+
+    .main-logo img {
+        width: 60%; 
+        min-width: 250px; 
+    }
+
+    .navlinks {
+        gap: 23px; 
+    }
+
+    .navlinks li a {
+        font-size: 1rem; 
+    }
+
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 8px 12px;
+        flex-direction: row; 
+        height: auto;
+    }
+
+    .triangle-img img {
+        width: 10%; 
+        min-width: 100px; 
+    }
+
+    .main-logo img {
+        margin-left: 2.4rem;
+        width: 51%;
+        min-width: 150px; 
+    }
+
+    .navlinks {
+        flex-direction: row; 
+        gap: 12px; 
+        margin-top: 10px; 
+        align-items: center; 
+    }
+
+    .navlinks li a {
+        font-size: 0.75rem;
+    }
+
+    .normal-button {
+        padding: 6px 12px; 
+        font-size: 0.8rem;
+    }
+}
+
+
+
+@media (max-width: 392px) {
+    .triangle-img img {
+        max-width: 40%;
+        height: 6vh;
+        }
+    .navbar {
+        padding: 5px 7px; 
+        flex-direction: row; 
+        height: auto;
+        align-items: center; 
+    }
+
+    .triangle-img img {
+        width: 12%; 
+        max-width: 80px; 
+        height: auto; 
+    }
+
+    .main-logo img {
+        margin-top: 2rem;
+        width: 60%; 
+        min-width: 120px; 
+    }
+
+    .navlinks {
         display: none;
     }
-    .main-logo img {
 
-        height: auto;
-        width: 80%;
-        min-width: 320px;
-        transition: opacity 0.3s ease;
+    .circle-button {
+        width: 12%; 
+        max-width: 40px; 
+        height: auto; 
     }
+ 
 }
