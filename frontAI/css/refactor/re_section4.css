@@ -1,0 +1,179 @@
+.section-04{
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    /* padding: 0px 0px 0px 5%; */
+    /* margin: -145px 0px 0px 0px; */
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    width: 90%;
+}
+.grid-container {
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem; */
+	display: flex;
+	flex-direction: column;
+    /* min-height: 600px; */
+}
+.card {
+    border-radius:1.3rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    padding: 2rem;
+    background: rgba(26, 26, 26, 0.386);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.183);
+    transition: all 0.3s ease;
+	width: 40%;
+}
+.card:hover {
+    background: rgba(40, 40, 40, 0.9);
+    transform: translateY(-5px);
+}
+.card-d {
+    font-family: 'MaPoliceVariable';
+    /* position: relative; */
+    /* left: 9rem;
+    top: 10rem; */
+    border-radius:1.3rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+    background: rgba(26, 26, 26, 0.386);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.183);
+    transition: all 0.3s ease;  
+	width: 45%;
+}
+.card-d p {
+    font-size: 1rem;
+    color: black;
+    direction: rtl;
+    font-size: 0.8rem;
+    opacity: 0.8;
+    /* position: relative; */
+    z-index: 2;
+    margin-bottom: 15px;
+}
+.card-d h2 {
+    color:black;
+    direction: rtl;
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    /* position: relative; */
+    z-index: 2;
+}
+.card-d:hover {
+    background:linear-gradient(45deg, #30e667, #e3ff0f);
+    transform: translateY(-5px);
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    flex-grow: 1;
+}
+.card h2 {
+    color: white;
+    direction: rtl;
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    /* position: relative; */
+    z-index: 2;
+}
+.card h1 {
+    color:black;
+    font-family: 'MaPoliceVariable';
+    direction: rtl;
+    font-size: 1.9rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    /* position: relative; */
+    z-index: 2;
+}
+.card p {
+    font-size: 1rem;
+    color: white;
+    direction: rtl;
+    font-size: 1rem;
+    opacity: 0.8;
+    /* position: relative; */
+    /* z-index: 2; */
+    margin-bottom: 15px;
+}
+.btn-card{
+    /* font-family: 'kontora'; */
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    background-color: rgba(141, 140, 140, 0.2);
+    border-radius: 3rem;
+    border: none;
+    margin-left: auto;
+	height: 55px;
+}
+.circle-button-card {
+    display: inline-flex;
+    margin: 0.5rem;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #30C35D, #DFFE01);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: visible; 
+    z-index: 1; 
+}
+.card-2 {
+    color: #0a0a0f;
+}
+.card-3 {
+    text-align: right;
+}
+
+#card-4 {
+	background-color:#c5ff00;
+	justify-content: center;
+	transform: rotate(9deg); 
+	margin-left: 1rem; 
+	margin-top: 1.5rem;
+}
+
+.five-content{
+	direction: rtl;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    padding-right: 20%;
+}
+#Text-five-content{
+    color: white;
+    font-size: 2.5rem;
+	margin-bottom: 3%;
+}
+
+.flex-row{
+	display: flex;
+	flex-direction: row;
+	gap: 2%;
+	margin: 2% 0 2% 0;
+}
