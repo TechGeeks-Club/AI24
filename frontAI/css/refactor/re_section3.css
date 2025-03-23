@@ -94,6 +94,7 @@
 }
 .graid-container div {
 	border-radius: 10%;
+	overflow: hidden;
 	/* margin: 10px; */
 }
 
@@ -180,7 +181,7 @@
 #decorator_img_3{
 	position: absolute;
 	z-index: -1;
-	transform: translateY(430px);
+	transform: translateY(630px);
     left: -100px;
 	height: 400px;
 }
