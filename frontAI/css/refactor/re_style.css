@@ -891,14 +891,14 @@ section {
     justify-content: space-between;
 
 }
-.Text-left{
+/* .Text-left{
     max-width: 20vw;
     margin-left: 8rem;
     font-family: 'Pcenter';
     color: white;
     font-size: 1.7rem;
-}
-.right-div{
+} */
+/* .right-div{
     margin-right: 3rem;
     background: rgba(255, 255, 255, 0.128);
     backdrop-filter: blur(10px);
@@ -922,7 +922,7 @@ section {
     width: 15vh;
     height: 3vw;
     z-index: 1;
-}
+} */
 .banner {
     width: 100%;
     max-width: 1200px;
@@ -1106,7 +1106,7 @@ section {
     width: 1.6rem;
     height: 1.6rem;   
 }
-.seven-content{
+/* .seven-content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1116,7 +1116,7 @@ section {
     top: -180px;
     max-width: 29vw;
     height: 9vh;
-}
+} */
 .column{
     color: white;
     display: flex;
@@ -1132,7 +1132,7 @@ section {
     color: white;
     font-family: 'kontora-bold';
 }
-.schedule-container {
+/* .schedule-container {
     font-family: 'PPNeueMachina-PlainLight';
     margin-left: 2rem;
     color: white;
@@ -1157,20 +1157,20 @@ section {
         rgba(255, 255, 255, 0.1),
         rgba(255, 255, 255, 0.3)
     );
-}
-.time {
+} */
+/* .time {
     font-size: 16px;
     color: rgba(255, 255, 255, 0.9);
-}
-.event-details {
+} */
+/* .event-details {
     padding-right: 20px;
-}
-.event-title {
+} */
+/* .event-title {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
-}
-.event-description {
+} */
+/* .event-description {
     font-size: 14px;
     max-width: 400px;
     opacity: 0.8;
@@ -1178,8 +1178,8 @@ section {
 .highlight {
     color: #67FF34;
     font-weight: bold;
-}
-
+} */
+/* 
 .arrow-button {
     display: flex;
     align-items: center;
@@ -1210,7 +1210,7 @@ section {
     height: 1px;
     background: #67FF34;
     margin-right: 5px;
-}
+} */
 /* @media (max-width: 600px) {
     .schedule-item {
         grid-template-columns: 1fr;
