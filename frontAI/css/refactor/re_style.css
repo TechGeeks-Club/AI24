@@ -531,9 +531,9 @@ section {
     margin-left: 15px;
 } */
 
-.espace{
+/* .espace{
     padding: 1rem 0rem;
-}
+} */
 .fourth-content{
     position: relative;
     margin-top: 8rem;
@@ -1333,14 +1333,14 @@ section {
     border-radius: 50%;
 } */
 
-.reseau-so{
+/* .reseau-so{
     display: flex;
     flex-direction: row;
     margin-left: 30rem;
     color: white;
     font-size: 1.7rem;
-}
-.column-div{
+} */
+/* .column-div{
     background:#05070e;
     backdrop-filter: blur(10px);
     border-radius: 0.6rem;
@@ -1358,10 +1358,10 @@ section {
     font-family: 'kontora';
      text-decoration: none;
      color: white;
-   }
-.iccons{
+   } */
+/* .iccons{
     font-size: 1.5rem;
-}
+} */
 .row{
     color: white;
     display: flex;
