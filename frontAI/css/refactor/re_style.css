@@ -315,7 +315,7 @@ section {
     font-style: normal;
   }
 
-  .numbers {
+  /* .numbers {
     color: white;
     display: flex;
     gap: 20px;
@@ -363,7 +363,7 @@ section {
     font-size: 1.2rem;
     margin-top: 0.5rem;
     color: white;
-  }
+  } */
   
   /* .countdown-container {
     max-width: 30vw;
@@ -1362,7 +1362,7 @@ section {
 /* .iccons{
     font-size: 1.5rem;
 } */
-.row{
+/* .row{
     color: white;
     display: flex;
     flex-direction: row;
@@ -1399,4 +1399,4 @@ section {
     top: -1rem;
 }
 
-
+ */

@@ -44,32 +44,35 @@
 .column-div{
     grid-area: 4 / 1 / 11 / 3;
 	background: rgb(155 172 250 / 5%);
-	/* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+	box-shadow: inset -1px 1px 18px 0px rgb(11 15 82 / 14%);
 	backdrop-filter: blur( 12px );
 	-webkit-backdrop-filter: blur( 12px );
 	
     border-radius: 0.6rem;
     align-items: center;
-     padding: 1rem;
-     margin: 1rem;
-      /* width: 35vw;
-      height: 10vh; */
-
-     display: flex;
-	 justify-content: space-between;
-     flex-direction: row;
-	 font-family: SpaceGrotesk-Light;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+	justify-content: space-between;
+    flex-direction: row;
+	font-family: SpaceGrotesk-Light;
 }
 .column-div a {
-
     font-size: 0.9rem;
     font-family: SpaceGrotesk-Light;
-     text-decoration: none;
-     color: white;
+    text-decoration: none;
+    color: white;
 }
 
 .icons{
 	font-family: "Font Awesome 6 Free";
 	font-size: 1.5rem;
 	color: white;
+}
+
+#hsu{
+	color: #B9FE11;
+    font-family: 'PPNeueMachina';
+    font-size: 1.3rem;
+    text-shadow: 0 0px 15px #B9FE12;
 }

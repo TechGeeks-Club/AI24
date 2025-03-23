@@ -138,35 +138,35 @@
 
 .hackathon-title {
     color: white;
-    font-size: 1.9rem;
+    font-size: 190%;
     font-weight: bold;
     margin-bottom: 5px;
   }
 
   .hackathon-participants {
     color: white;
-    font-size: 1.15rem;
+    font-size: 115%;
 	margin: 10% 0 0 0;
     opacity: 0.8;
   }
 
 .card-title {
-	font-size: 1.7rem;
+	font-size: 170%;
 	margin: 0 0 10% 0;
 }
 .card-description {
-    font-size: 1.1rem;
+    font-size: 110%;
     opacity: 0.8;
 }
 .s3t4{
 	direction:rtl
 }
 #s3t4-1{
-	font-size: 2.3rem;
+	font-size: 230%;
 	margin: 0 0 10% 0;	
 }
 #s3t4-2{
-	font-size: 1.5rem;
+	font-size: 150%;
 	margin: 0 0 10% 0;	
 }
 

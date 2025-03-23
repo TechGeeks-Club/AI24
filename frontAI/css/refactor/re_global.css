@@ -42,16 +42,13 @@ section {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
     align-items: center;
     gap: 15px;
 }
-.left-triangle {
-    display: inline-block;
-    margin-right: 10px;
-}
+
 .triangle-img {
-    height: 300px; 
-    width: 300px;
+    width: 30%;
     transform: translateY(2px);
 }
 
@@ -66,6 +63,7 @@ section {
     background-image: linear-gradient(45deg, #30C35D, #DFFE01);
     cursor: pointer;
     transition: all 0.3s ease;
+    margin-right: 65p;
     /* position: relative; */
     /* overflow: hidden;  */
     /* z-index: 1; */
