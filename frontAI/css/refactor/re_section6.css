@@ -93,11 +93,11 @@
         padding: 10px 20px;
         width: auto;
         display: flex;
-        align-items: center; /* Centrer verticalement les éléments */
-        justify-content: center; /* Centrer horizontalement les éléments */
-        gap: 10px; /* Ajouter un espacement entre le texte et la flèche */
-        background-color: transparent; /* Fond transparent */
-        border: 1px solid black; /* Ajouter une bordure */
+        align-items: center; 
+        justify-content: center; 
+        gap: 10px; 
+        background-color: transparent; 
+        border: 1px solid black; 
     }
 
     .btn-text {
@@ -106,27 +106,25 @@
     }
 
     .arrow {
-        font-size: 1.5rem; /* Taille de la flèche */
-        color: black; /* Couleur de la flèche */
-        display: inline-block; /* Assurer que la flèche est affichée */
-        opacity: 1; /* Rendre la flèche visible tout le temps */
-        transition: opacity 0.3s ease; /* Ajouter une transition pour un effet fluide */
+        font-size: 1.5rem; 
+        color: black; 
+        display: inline-block; 
+        opacity: 1; 
+        transition: opacity 0.3s ease; 
     }
 
     .circle-button:hover .arrow {
-        opacity: 1; /* La flèche reste visible au survol */
+        opacity: 1; 
     }
 
     .circle-button:hover {
-        background-color: #4CAF50; /* Changer la couleur au survol */
+        background-color: #4CAF50;
     }
-
     .eight-content-row {
         font-size: 2rem;
         flex-direction: column;
         align-items: flex-start;
     }
-
     .responsive-row {
         flex-direction: row;
         justify-content: space-between;

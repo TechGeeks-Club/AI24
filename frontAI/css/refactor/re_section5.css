@@ -163,28 +163,28 @@
 
 @media (max-width: 768px) {
     .schedule-container {
-        grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+        grid-template-columns: repeat(2, 1fr); 
     }
     .section-05 {
         padding: 20px 0;
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centrer horizontalement */
-        justify-content: center; /* Centrer verticalement */
-        text-align: center; /* Centrer le texte */
+        align-items: center; 
+        justify-content: center; 
+        text-align: center; 
     }
     .sec5sub1 {
         flex-direction: column;
-        align-items: center; /* Centrer les éléments enfants */
+        align-items: center; 
         gap: 20px;
         padding: 0 10px;
-        width: 100%; /* Pleine largeur */
+        width: 100%; 
     }
     .Text-left {
         margin-left: 0;
         font-size: 1.8rem;
-        text-align: center; /* Centrer le texte */
-        width: 100%; /* Pleine largeur */
+        text-align: center; 
+        width: 100%;
     }
     #decorator_img_5 {
         display: none;
@@ -195,14 +195,14 @@
         gap: 10px;
         padding: 10px;
         width: 90%;
-        align-items: center; /* Centrer les boutons */
+        align-items: center; 
     }
 
     .btn-right-div {
-        width: 100%; /* Boutons prennent toute la largeur */
+        width: 100%; 
         padding: 10px 20px;
         font-size: 0.9rem;
-        text-align: center; /* Centrer le texte des boutons */
+        text-align: center; 
     }
 
     .seven-content {
@@ -210,42 +210,85 @@
         width: 100%;
         padding: 0 10px;
         display: flex;
-        justify-content: center; /* Centrer le contenu */
-        align-items: center; /* Centrer verticalement */
+        justify-content: center; 
+        align-items: center; 
     }
 
     .schedule-container {
         max-width: 100%;
         min-width: 100%;
         margin-left: 0;
-        text-align: center; /* Centrer le texte */
+        text-align: center; 
     }
 
     .schedule-item {
         grid-template-columns: 1fr;
         gap: 10px;
         padding: 15px 0;
-        text-align: center; /* Centrer le texte */
+        text-align: center;
     }
 
     .time, .event-title, .event-description {
         font-size: 0.9rem;
-        text-align: center; /* Centrer le texte */
+        text-align: center; 
     }
 
     .event-details {
         padding-right: 0;
-        text-align: center; /* Centrer le texte */
+        text-align: center; 
     }
 
     .arrow-button {
         width: 30px;
         height: 30px;
-        margin: 0 auto; /* Centrer le bouton */
+        margin: 0 auto; 
     }
 
     .arrow-button svg {
         width: 15px;
         height: 15px;
+    }
+
+    .banner {
+        padding: 15px; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px;
+    }
+
+    .speaker-main img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .info {
+        text-align: center; 
+    }
+
+    .titre {
+        font-size: 1.2rem; 
+    }
+
+    .details {
+        font-size: 0.9rem; 
+    }
+
+    .other-speakers {
+        display: flex;
+        flex-direction: column; 
+        gap: 10px; 
+        align-items: center; 
+    }
+
+    .speaker-small img {
+        width: 50px; 
+        height: 50px;
     }
 }
