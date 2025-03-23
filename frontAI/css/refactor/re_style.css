@@ -1234,7 +1234,7 @@ section {
     }
 } */
 
-.eight-content{
+/* .eight-content{
     margin: 4rem;
     padding: 1.3rem;
     background-color: #010b24;
@@ -1254,21 +1254,21 @@ section {
     font-family: 'kontora';
     font-size: 2rem;
     color: white;
-}
-.paragrph{
+} */
+/* .paragrph{
     margin-left: 4.5rem;
     max-width: 70vw;
     font-family: 'kontora';
     font-size: 1.1rem;
     color: white;
-}
-.prgrph{
+} */
+/* .prgrph{
     max-width: 70vw;
     font-family: 'kontora';
     font-size: 1.1rem;
     color: white;
-}
-.titles{ 
+} */
+/* .titles{ 
   font-family: 'kontora';
     color: rgba(194, 192, 192, 0.735);
 }
@@ -1278,7 +1278,7 @@ section {
     font-family: 'kontora';
     font-size: 1.1rem;
     align-items: center;
-}
+} */
 
 .containers {
     margin-bottom: 3rem;
