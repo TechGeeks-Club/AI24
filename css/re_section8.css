@@ -14,7 +14,10 @@
     color: white;
 	font-size: 2rem;
 }
-
+.reseau-so a{
+	text-decoration: none;
+	color: white;
+}
 
 #sec8sub1 {
 	text-align: center;
