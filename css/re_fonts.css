@@ -1,0 +1,29 @@
+@font-face {
+	font-family: "PPNeueMachina";
+	src: url(../fonts/PPNeueMachina-InktrapLight.otf) format("opentype");
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: "SpaceGrotesk-Medium";
+	src: url(../fonts/SpaceGrotesk-Regular-BF65712b4fdc934.ttf) format("truetype");
+	font-weight: medium;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SpaceGrotesk-Light";
+	src: url(../fonts/SpaceGrotesk-Light-BF65712b4fc80d0.ttf) format("truetype");
+	font-weight: medium;
+	font-style: normal;
+}
+
+.ppnm{
+	font-family: PPNeueMachina;
+}
+.sgm{
+	font-family: SpaceGrotesk-Medium;
+}
+.sgl{
+	font-family: SpaceGrotesk-Light;
+}
