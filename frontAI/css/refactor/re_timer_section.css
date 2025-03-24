@@ -190,8 +190,6 @@
   }
 }
 
-
-/* Extra small devices (phones, less than 576px) */
 @media (max-width: 575px) {
   .p-center{
     font-size: 1.3rem;
@@ -199,6 +197,9 @@
   .p-left{
     margin: 20% 0 -88px 0;
     font-size: 9rem;
+  }
+  #s3t4-1 {
+    font-size: 125%;
   }
 }
 
