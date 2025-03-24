@@ -107,6 +107,12 @@
 	.Text-robot {
         font-size: 125%;
     }
+	#robot-img{
+		width: 110%;
+	}
+	#back-robot {
+		width: 80%;
+	}
 }
 
 @media (max-width: 992px) {
