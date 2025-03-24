@@ -64,7 +64,6 @@
 }
 .div2 {
 	grid-area: 1 / 1 / 4 / 3;
-	/* background-image: url("../../images/6019369285383735197.png"); */
 	filter: grayscale(1);
 }
 .div3 { 
@@ -82,7 +81,6 @@
 .div8 { 
 	grid-area: 1 / 7 / 8 / 9;
 	background: rgba( 255, 255, 255, 0.05 );
-	/* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
 	backdrop-filter: blur( 12px );
 	-webkit-backdrop-filter: blur( 12px );
 	border-radius: 10px;
@@ -95,13 +93,11 @@
 .graid-container div {
 	border-radius: 10%;
 	overflow: hidden;
-	/* margin: 10px; */
 }
 
-/* Reveal the image only in these divs */
 .div4, .div6, .div5,.div3, .div7 {
 	position: relative;
-	z-index: 99; /* Ensure they are above the image */
+	z-index: 99; 
 }
 
 .div4::before, .div6::before, .div5::before, .div2::before ,.div7::before {
@@ -113,7 +109,7 @@
 	height: 100%;
 	background-size: cover;
 	background-position: center;
-	mix-blend-mode: multiply; /* Blend the image with the background */
+	mix-blend-mode: multiply; 
 	border-radius: 10%;
 	filter: grayscale(1);
 }
@@ -185,10 +181,6 @@
 	height: 400px;
 }
 
-
-
-
-
 @media(min-width: 1300px) {
 	
 }
@@ -240,7 +232,7 @@
 	}
   }
   
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
 	.graid-container {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
@@ -249,30 +241,29 @@
 		grid-row-gap: 15px;
 		height: 150vh;
 	}
-		
-		.div1 { grid-area: 3 / 1 / 8 / 2; }
-		.div2 { grid-area: 1 / 1 / 3 / 2; }
-		.div3 { grid-area: 1 / 2 / 4 / 3; }
-		.div4 { grid-area: 4 / 2 / 8 / 3; }
-		.div5 { grid-area: 12 / 1 / 15 / 2; }
-		.div6 { grid-area: 8 / 1 / 12 / 2; }
-		.div7 { grid-area: 13 / 2 / 15 / 3; }
-		.div8 { grid-area: 8 / 2 / 13 / 3; }
 	
-		.card-description {
-			font-size: 90%;
-		}
-		.card-title {
-			font-size: 110%;
-		}
-		.s3t1 {
-			font-size: 2rem;
-		}
-  }
+	.div1 { grid-area: 3 / 1 / 8 / 2; }
+	.div2 { grid-area: 1 / 1 / 3 / 2; }
+	.div3 { grid-area: 1 / 2 / 4 / 3; }
+	.div4 { grid-area: 4 / 2 / 8 / 3; }
+	.div5 { grid-area: 12 / 1 / 15 / 2; }
+	.div6 { grid-area: 8 / 1 / 12 / 2; }
+	.div7 { grid-area: 13 / 2 / 15 / 3; }
+	.div8 { grid-area: 8 / 2 / 13 / 3; }
+
+	.card-description {
+		font-size: 90%;
+	}
+	.card-title {
+		font-size: 110%;
+	}
+	.s3t1 {
+		font-size: 2rem;
+	}
+}
   
   
-  /* Extra small devices (phones, less than 576px) */
-  @media (max-width: 575px) {
+@media (max-width: 575px) {
 	.graid-container {
 		height: 100vh;
 	}

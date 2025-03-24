@@ -9,13 +9,11 @@
   margin: -145px 0px 0px 0px;
 }
 .second-content{
-  /* margin-left: 2rem; */
   display: flex;
   justify-content: flex-start; 
   align-items: center;
   width: 100%;
   font-size: 3rem;
-  /* padding: 0 40px;  */
   box-sizing: border-box;
 	gap: 10rem;
 }

@@ -5,8 +5,6 @@
     justify-content: center;
     align-items: center;
     height: fit-content;
-    /* padding: 0px 0px 0px 5%; */
-    /* margin: -145px 0px 0px 0px; */
 }
 
 .sponsors-grid{
@@ -58,31 +56,31 @@
 
 @media (max-width: 768px) {
     .sponsors-grid {
-        grid-template-columns: 1fr; /* 1 colonne pour les petits écrans */
-        gap: 15px; /* Réduire l'espace entre les éléments */
+        grid-template-columns: 1fr; 
+        gap: 15px; 
     }
 
     .sponsor-large {
-        padding: 20px; /* Réduire le padding */
-        height: auto; /* Hauteur automatique */
+        padding: 20px; 
+        height: auto; 
     }
 
     .sponsor-row {
-        grid-column: 1 / 2; /* Étendre sur 1 colonne */
-        grid-template-columns: repeat(2, 1fr); /* 2 colonnes pour les petits écrans */
-        gap: 15px; /* Réduire l'espace entre les éléments */
+        grid-column: 1 / 2; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 15px; 
     }
 
     .sponsor-small {
-        padding: 15px; /* Réduire le padding */
-        height: auto; /* Hauteur automatique */
+        padding: 15px; 
+        height: auto; 
     }
 
     #sponsors-txt-div h1 {
-        font-size: 2rem; /* Réduire la taille de la police du titre */
+        font-size: 2rem; 
     }
 
     #sponsors-txt-div p {
-        font-size: 1rem; /* Réduire la taille de la police du paragraphe */
+        font-size: 1rem; 
     }
 }

@@ -1,7 +1,6 @@
 body {
     width: 100%;
     height: max-content;
-    /* background: black; */
     background: radial-gradient(ellipse 177.46% 352.09% at 50.00% 38.36%, black 0%, #09173C 63%, #1C2140 89%);
     margin: 0;
     overflow-x: hidden; 
@@ -53,7 +52,6 @@ section {
 }
 
 .circle-button {
-    /* margin: 4rem 0 0 2rem; */
     display: inline-flex;
     align-items: center;
     width: 45px;
@@ -64,18 +62,13 @@ section {
     cursor: pointer;
     transition: all 0.3s ease;
     margin-right: 65p;
-    /* position: relative; */
-    /* overflow: hidden;  */
-    /* z-index: 1; */
 }
 
 .circle-button a {
-    /* z-index: 1; */
     display: flex;
     align-items: center;
     text-decoration: none;
     font-size: 1.2rem;
-    /* position: relative; */
     padding-left: 18px;
     transform: translateX(-8px);
 }
@@ -116,13 +109,7 @@ section {
     color: black; 
     z-index: 2;
 }
-/* .btn-text::after {
-    content: "IN US";
-    position: absolute;
-    left: 12px; 
-    color: white;
-    z-index: 1;
-} */
+
 .arrow {
     font-family: 'Poppins';
     font-weight: 700;
