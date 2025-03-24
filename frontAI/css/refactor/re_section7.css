@@ -55,3 +55,34 @@
     background-color: white;
     border-radius: 50%;
 } 
+
+@media (max-width: 768px) {
+    .sponsors-grid {
+        grid-template-columns: 1fr; /* 1 colonne pour les petits écrans */
+        gap: 15px; /* Réduire l'espace entre les éléments */
+    }
+
+    .sponsor-large {
+        padding: 20px; /* Réduire le padding */
+        height: auto; /* Hauteur automatique */
+    }
+
+    .sponsor-row {
+        grid-column: 1 / 2; /* Étendre sur 1 colonne */
+        grid-template-columns: repeat(2, 1fr); /* 2 colonnes pour les petits écrans */
+        gap: 15px; /* Réduire l'espace entre les éléments */
+    }
+
+    .sponsor-small {
+        padding: 15px; /* Réduire le padding */
+        height: auto; /* Hauteur automatique */
+    }
+
+    #sponsors-txt-div h1 {
+        font-size: 2rem; /* Réduire la taille de la police du titre */
+    }
+
+    #sponsors-txt-div p {
+        font-size: 1rem; /* Réduire la taille de la police du paragraphe */
+    }
+}

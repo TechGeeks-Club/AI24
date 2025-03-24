@@ -20,7 +20,6 @@
     gap: 7px;
 }
 .eight-content-row{
-    margin-left: 4.5rem;
     max-width: 70vw;
     display: flex;
     flex-direction: row;
@@ -35,7 +34,6 @@
 }
 
 .paragrph{
-    margin-left: 4.5rem;
     /* max-width: 70vw; */
     font-family: SpaceGrotesk-Light;
     font-size: 1.1rem;
@@ -61,6 +59,7 @@
 }
 .sec6sub1{
     background-color: #060C1E;
+    padding: 0 10%;
 }
 #htju{
     font-family: PPNeueMachina;
@@ -86,4 +85,68 @@
     font-size: 0.87rem;
     width: 75%;
     text-align: center;
+}
+
+.pad-10{
+    padding: 0 10%;
+}
+
+
+@media (max-width: 768px) {
+
+    .circle-button {
+        border-radius: 25px; 
+        padding: 10px 20px; 
+        width: auto;
+    }
+
+    .btn-text {
+        color: black;
+        font-size: 0.9rem;
+    }
+
+    .arrow {
+        font-size: 1rem; 
+        color: black;
+    }
+
+    .circle-button:hover {
+        background-color: #4CAF50; 
+    }
+
+    .eight-content-row {
+        font-size: 2rem;
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .responsive-row {
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center; 
+    }
+
+    .eight-content-row h1 {
+        font-size: 1.5rem; 
+    }
+
+    .paragrph, .prgrph {
+        font-size: 0.9rem; 
+    }
+
+    .titles {
+        font-size: 0.9rem; 
+    }
+
+    .column {
+        margin: 0.5rem; 
+        width: 100%; 
+    }
+
+    #htju {
+        font-size: 1.5rem; 
+    }
+    .circle-button:hover{
+        display: none;
+    }
 }
