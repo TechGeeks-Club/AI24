@@ -1,18 +1,10 @@
-/* .navbar {
-    padding: 20px 40px;
-    background-color: transparent;
-    display: flex;
- 
-    gap: 30px;
-} */
 .navbar {
-    padding: 20px 16%;
+    padding: 20px 16% 0 10%;
     background-color: transparent;
     display: flex;
     justify-content: space-between;
     height: 6.875rem;
     align-items: center; 
-    /* gap: 30px; */
 }
 
 .main-logo {
@@ -65,15 +57,6 @@
 }
 
 
-@media (max-width: 375px) {
-
-    /* .main-logo {
-        max-width: 155px;
-        min-width: 155px;
-        overflow: hidden;
-    } */
-}
-
 /* Extra small devices (phones, less than 576px) */
 @media (max-width: 575.98px) {
     .main-logo {
@@ -85,43 +68,8 @@
     .navbar {
         padding: 20px 2%;
         align-items: center; 
-        /* gap: 30px; */
     }
 
-
-    /* .circle-button ,.circle-button:hover {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 110px;
-        height: 32px;
-        border-radius: 25px; 
-        padding: 10px 20px; 
-    } */
-
-    /* .btn-text {
-        color: black;
-        font-size: 0.9rem;
-    }
-
-    .arrow {
-        font-size: 1rem; 
-        color: black;
-    }
-
-    .circle-button:hover {
-        background-color: #4CAF50; 
-    }
-    
-    .btn-text , .btn-text:hover {
-        color: #000;        
-    }
-    .circle-button::after, .circle-button::before {
-        display: none;
-    }
-    .btn-text::before , .btn-text::after {
-        display: none;
-    } */
 }
 
 
@@ -140,11 +88,9 @@
         display: none;
     }
     .main-logo img {
-
         height: auto;
         width: 80%;
         min-width: 270px;        
     }
-    
 }
 
