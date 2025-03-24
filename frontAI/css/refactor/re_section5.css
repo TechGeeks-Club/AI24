@@ -175,6 +175,80 @@
 }
 
 
+.speakers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.speaker-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.speaker-item.active {
+    background: rgba(13, 20, 38, 0.7);
+}
+
+.speaker-item:not(.active) {
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
+
+.speaker-item:not(.active):hover {
+    opacity: 0.9;
+}
+
+.speaker-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.speaker-item.active .speaker-image {
+    border-color: #67FF34;
+    box-shadow: 0 0 10px rgba(103, 255, 52, 0.5);
+}
+
+.speaker-info {
+    flex: 1;
+}
+
+.speaker-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-family: SpaceGrotesk-Medium, Arial, sans-serif;
+}
+
+.speaker-title {
+    font-family: SpaceGrotesk-Light,Arial,sans-serif;
+    font-size: 14px;
+    color: #67FF34;
+    margin-bottom: 5px;
+}
+
+.speaker-time, .speaker-affiliation {
+    font-family: SpaceGrotesk-Light,Arial,sans-serif;
+    font-size: 13px;
+    opacity: 0.8;
+    margin-bottom: 3px;
+}
+
+.speaker-bio {
+    font-family: SpaceGrotesk-Light,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+    margin-top: 8px;
+    opacity: 0.9;
+}
 
 @media (max-width: 768px) {
     .schedule-container {
@@ -269,3 +343,4 @@
         transform: translate(0%, 14%);    
     }
 }
+
