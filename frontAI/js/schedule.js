@@ -151,12 +151,22 @@ const subProgram = `
 
 // Fonction pour afficher le sous-programme
 function showSubProgram(event) {
+    // Vérifier si un sous-programme est déjà affiché pour cet élément
+    const parentScheduleItem = event.target.closest('.schedule-item');
+    const existingSubProgram = parentScheduleItem.nextElementSibling;
+    
+    // Si un sous-programme existe déjà, on le supprime
+    if (existingSubProgram && existingSubProgram.classList.contains('banner-container')) {
+        existingSubProgram.remove();
+        return;
+    }
+    
     // Créer un conteneur pour le sous-programme
     const subProgramContainer = document.createElement('div');
+    subProgramContainer.className = 'banner-container'; // Ajouter une classe pour identification
     subProgramContainer.innerHTML = subProgram;
 
     // Insérer le sous-programme après l'élément parent du bouton cliqué
-    const parentScheduleItem = event.target.closest('.schedule-item');
     parentScheduleItem.insertAdjacentElement('afterend', subProgramContainer);
 
     // Ajouter un écouteur d'événements au bouton de fermeture
@@ -169,6 +179,9 @@ function showSubProgram(event) {
 // Fonction pour attacher les écouteurs d'événements aux boutons arrow-button
 function attachArrowButtonListeners() {
     document.querySelectorAll('.arrow-button').forEach(button => {
+        // Supprimer d'abord les écouteurs existants pour éviter les doublons
+        button.removeEventListener('click', showSubProgram);
+        // Ajouter le nouvel écouteur
         button.addEventListener('click', showSubProgram);
     });
 }

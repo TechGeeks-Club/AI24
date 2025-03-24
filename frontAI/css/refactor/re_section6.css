@@ -86,15 +86,11 @@
     width: 75%;
     text-align: center;
 }
-
 .pad-10{
     padding: 0 10%;
 }
 
-
 @media (max-width: 768px) {
-
-    
 
     .eight-content-row {
         font-size: 2rem;
@@ -105,7 +101,6 @@
     .responsive-row {
         flex-direction: row; 
         justify-content: space-between;
-        align-items: center; 
     }
 
     .eight-content-row h1 {
