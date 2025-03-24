@@ -181,9 +181,7 @@
 	height: 400px;
 }
 
-@media(min-width: 1300px) {
-	
-}
+
 @media(max-width: 1300px) {
 	.graid-container {
 		height: 80vh;
@@ -275,4 +273,11 @@
 	.div1{
 		gap: 0;
 	}
+}
+
+@media (max-width: 395px) {
+	.graid-container {
+		height: 125vh;
+	}
+	
 }
