@@ -48,6 +48,7 @@
 }
 #bdr{
 	right: 0px;
+	transform: rotateY(180deg);
 }
 
 #footer{

@@ -114,19 +114,19 @@
 	filter: grayscale(1);
 }
 .div6::before{
-	background-image: url("../../images/tg_pic/tr.jpg");
+	background-image: url("../../images/tg_pic/tr.webp");
 }
 .div5::before{
-	background-image: url("../../images/tg_pic/lr.jpg");
+	background-image: url("../../images/tg_pic/lr.webp");
 }
 .div4::before{
-	background-image: url("../../images/tg_pic/ll.jpg");
+	background-image: url("../../images/tg_pic/ll.webp");
 }
 .div2::before{
-	background-image: url("../../images/6019369285383735197.png");
+	background-image: url("../../images/6019369285383735197.webp");
 }
 .div7::before{
-	background-image: url("../../images/Rectangle 33.png");
+	background-image: url("../../images/Rectangle 33.webp");
 }
 
 

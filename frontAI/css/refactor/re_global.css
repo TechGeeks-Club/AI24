@@ -48,7 +48,7 @@ section {
 
 .triangle-img {
     width: 30%;
-    transform: translateY(2px);
+    transform: rotate(90deg) translateY(7%);
 }
 
 .circle-button {
