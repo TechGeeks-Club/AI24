@@ -12,6 +12,8 @@
 	margin: 10% 0px 0px 0px; 
 }
 
+
+
 .logos{
 	display: flex;
 	flex-direction: row;
@@ -21,22 +23,20 @@
 	height: 100Px;
 }
 .logos p {
-	
     background: white;
     height: 80%;
     width: 1px;
 }
 
 #aih-lg{
-	width: 9rem;
-    height: auto;
+	width: 23%;
 }
 #tg-lg{
-	height: 4rem;
+	width: 40%;
 }
-#univ-lg{
-	height: 5rem;
-	margin-right: 10px;
+#univ-lg {
+	width: 13%;
+    margin-right: 10px;
 }
 
 .botm_deco{
@@ -69,4 +69,28 @@
 	padding-bottom: 13px;
 	width: 40%;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+	.logos p {
+	    height: 40%;
+	}
+	#footer p {
+		font-size: 60%;
+	}
+	.icons{
+		display: none;
+	}
+	.column-div{
+		justify-content: center;
+		text-align: center;
+	}
+}
+
+@media (max-width: 575px) {
+	
+	#footer p {
+		font-size: 47%;
+	}
+	
 }

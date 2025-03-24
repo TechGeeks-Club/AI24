@@ -67,15 +67,20 @@
 
 @media (max-width: 375px) {
 
+    /* .main-logo {
+        max-width: 155px;
+        min-width: 155px;
+        overflow: hidden;
+    } */
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
     .main-logo {
         max-width: 155px;
         min-width: 155px;
         overflow: hidden;
     }
-}
-
-/* Extra small devices (phones, less than 576px) */
-@media (max-width: 575.98px) {
 
     .navbar {
         padding: 20px 2%;
@@ -84,7 +89,7 @@
     }
 
 
-    .circle-button ,.circle-button:hover {
+    /* .circle-button ,.circle-button:hover {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -92,9 +97,9 @@
         height: 32px;
         border-radius: 25px; 
         padding: 10px 20px; 
-    }
+    } */
 
-    .btn-text {
+    /* .btn-text {
         color: black;
         font-size: 0.9rem;
     }
@@ -116,7 +121,7 @@
     }
     .btn-text::before , .btn-text::after {
         display: none;
-    }
+    } */
 }
 
 

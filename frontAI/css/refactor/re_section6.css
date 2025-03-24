@@ -94,25 +94,7 @@
 
 @media (max-width: 768px) {
 
-    .circle-button {
-        border-radius: 25px; 
-        padding: 10px 20px; 
-        width: max-content;
-    }
-
-    .btn-text {
-        color: black;
-        font-size: 0.9rem;
-    }
-
-    .arrow {
-        font-size: 1rem; 
-        color: black;
-    }
-
-    .circle-button:hover {
-        background-color: #4CAF50; 
-    }
+    
 
     .eight-content-row {
         font-size: 2rem;
@@ -146,7 +128,28 @@
     #htju {
         font-size: 1.5rem; 
     }
-    .circle-button:hover{
+    /* .circle-button:hover{
         display: none;
+    } */
+}
+
+@media (max-width: 575px) {
+    .circle-button {
+        border-radius: 25px; 
+        width: fit-content;
+    }
+
+    .btn-text {
+        color: black;
+        font-size: 0.9rem;
+    }
+
+    .arrow {
+        font-size: 1rem; 
+        color: black;
+    }
+
+    .circle-button:hover {
+        background-color: #4CAF50; 
     }
 }
