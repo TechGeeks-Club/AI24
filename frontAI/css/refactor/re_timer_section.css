@@ -234,6 +234,14 @@
   .nbr-days{
     min-width: 85px;
   }
+  
+  .number-label {
+    font-size: 1rem;
+    margin-top: 0rem;
+  }
+  .numbers {
+    gap: 10px;
+  }
 
 }
 
