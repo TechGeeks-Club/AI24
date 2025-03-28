@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <title>TechGeeks Registration</title>
+  <link rel="stylesheet" href="./css/forms.css" />
+</head>
+
+<body>
+  <nav>
+    <img src="./images/forms_images/image.png" alt="Logo" />
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links">
+      <li>Description</li>
+      <li>Timeline</li>
+      <li>Details</li>
+    </ul>
+    <ul class="dropdown-menu">
+      <li onclick="toggleMenu()">Description</li>
+      <li onclick="toggleMenu()">Timeline</li>
+      <li onclick="toggleMenu()">Details</li>
+    </ul>
+  </nav>
+  <section>
+    <div class="section-left">
+      <h1>Registration</h1>
+      <div style="display: flex; gap: 15px">
+        <div class="vertical-line"></div>
+        <div style="
+              display: flex;
+              justify-content: space-between;
+              flex-direction: column;
+              width: 70%;
+            ">
+          <h2 style="font-size: 17px; color: white">Personal informations</h2>
+          <p style="font-size: 9px; color: white">
+            These informations are required for the Hackathon, Workshops and
+            Best idea registrations.
+            <span style="color: red">*Please ensure all fields are completed accurately.</span>
+          </p>
+        </div>
+      </div>
+      <br />
+      <div class="left-form" style="display: flex; flex-direction: column; gap: 15px">
+        <div class="input-container">
+          <label for="firstname">First name *</label>
+          <input oninput="hideErrorMessage()" type="text" id="firstname" placeholder="Enter your first name" />
+          <i class="fa-solid fa-check checkmark"></i>
+        </div>
+
+        <div class="input-container">
+          <label for="lastname">Last name *</label>
+          <input oninput="hideErrorMessage()" type="text" id="lastname" placeholder="Enter your last name" />
+          <i class="fa-solid fa-check checkmark"></i>
+        </div>
+
+        <div class="input-container">
+          <label for="email">Email *</label>
+          <input oninput="hideErrorMessage()" type="email" id="email" placeholder="Enter your email" />
+          <i class="fa-solid fa-check checkmark"></i>
+        </div>
+
+        <div class="input-container">
+          <label for="phone">Phone number *</label>
+          <input oninput="hideErrorMessage()" type="tel" id="phone" placeholder="Enter your phone number" />
+          <i class="fa-solid fa-check checkmark"></i>
+        </div>
+
+        <div class="input-container">
+          <label for="university">University or Higher School</label>
+          <input oninput="hideErrorMessage()" type="text" id="university" placeholder="Enter your university" />
+          <i class="fa-solid fa-check checkmark"></i>
+        </div>
+
+        <div class="input-container">
+          <label for="fieldofstudy">Field of Study</label>
+          <input oninput="hideErrorMessage()" type="text" id="fieldofstudy" placeholder="Enter your field of study" />
+          <i class="fa-solid fa-check checkmark"></i>
+        </div>
+
+        <div class="input-container">
+          <label for="academiclevel">Academic Level</label>
+          <input oninput="hideErrorMessage()" type="text" id="academiclevel" placeholder="Enter your level" />
+          <i class="fa-solid fa-check checkmark"></i>
+        </div>
+
+        <div class="input-container">
+          <label for="company">Company / Organization</label>
+          <input oninput="hideErrorMessage()" type="text" id="company" placeholder="Enter the name of the company" />
+          <i class="fa-solid fa-check checkmark"></i>
+        </div>
+      </div>
+    </div>
+    <div class="section-right">
+      <div class="section-right-header">
+        <button class="section-right-header-buttons" id="hackaton-btn">Hackathon</button>
+        <button class="section-right-header-buttons" id="Workshops-btn">Workshops</button>
+        <button class="section-right-header-buttons" id="Best-idea-btn">Best idea</button>
+      </div>
+
+      <!-- join solo section -->
+      <div class="section-right-content join-solo" id="Hackathon-join-solo">
+        <h4 style="color: #ffffff ;margin-bottom: 30px;">Other informations</h3>
+          <div class="left-form" style="display: flex; flex-direction: column; gap: 15px">
+            <div class="input-container">
+              <label for="residence">Willaya *</label>
+              <input oninput="hideErrorMessage()" type="text" id="residence" placeholder="Enter your willaya"
+                value="Guelma" onchange="hideErrorMessage()" />
+              <i class="fa-solid fa-check checkmark"></i>
+            </div>
+
+            <div class="input-container">
+              <label for="github">GitHub Profile</label>
+              <input oninput="hideErrorMessage()" type="text" id="github" placeholder="Enter your GitHub link"
+                value="https://Link" />
+              <i class="fa-solid fa-check checkmark"></i>
+            </div>
+
+            <div class="input-container">
+              <label for="linkedin">LinkedIn Profile</label>
+              <input oninput="hideErrorMessage()" type="text" id="linkedin" placeholder="Enter your LinkedIn link"
+                value="https://Link" />
+              <i class="fa-solid fa-check checkmark"></i>
+            </div>
+
+            <div class="input-container">
+              <label for="skills">Technical Skills *</label>
+              <textarea oninput="hideErrorMessage()" id="skills" placeholder="List your programming languages, tools..."
+                rows="4"></textarea>
+              <i class="fa-solid fa-check checkmark"></i>
+            </div>
+
+            <div class="input-container">
+              <label for="experience">AI Experience *</label>
+              <textarea oninput="hideErrorMessage()" id="experience" placeholder="Describe your experience in AI"
+                rows="4"></textarea>
+              <i class="fa-solid fa-check checkmark"></i>
+            </div>
+
+            <div class="input-container">
+              <label for="motivation">Why Join? *</label>
+              <textarea oninput="hideErrorMessage()" id="motivation" placeholder="Explain your motivation"
+                rows="4"></textarea>
+              <i class="fa-solid fa-check checkmark"></i>
+            </div>
+
+          </div>
+          <div class="bottom-buttons">
+            <button> Join Solo</button><button id="Join-a-team">Join a team</button>
+          </div>
+          <div style="display: flex ; justify-content: end; margin-top: 20px;height: 30px;"><button class="next-button"
+              id="next-join-solo">
+              Next <span class="arrow">→</span>
+
+            </button></div>
+          <div style="width: 100%;display: none; justify-content: center;" id="error-join-solo" class="error-message">
+            <p style="color: red; font-size: 10px;">You must fill in all the inputs.</p>
+          </div>
+      </div>
+      <!-- join solo section -->
+
+      <!-- Join Team Section -->
+      <div class="section-right-content" id="Hackathon-Join-a-team">
+        <div style="
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    ">
+
+          <div style="height: auto; display: flex; flex-direction: column; gap: 70px;">
+            <button class="next-button" id="backButton1">
+              <span class="arrow">←</span> Back
+            </button>
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+              <p style="color: white; font-size: 10px;">
+                <span style="color: red;">Note:</span> You must enter the correct name
+                of the team.
+              </p>
+              <div class="input-container">
+                <label for="linkedin">Team name</label>
+                <input type="text" id="team-name-input" placeholder="Enter your team name"
+                  oninput="hideErrorMessage()" />
+                <i class="fa-solid fa-check checkmark"></i>
+              </div>
+            </div>
+          </div>
+
+
+          <div style="display: flex; flex-direction: column; gap: 20px;">
+            <div style="height: 20px; display: flex; justify-content: end; ">
+              <button class="next-button" id="next-join-team">
+                Next <span class="arrow">→</span>
+              </button>
+            </div>
+            <div style="width: 100%;display: none; justify-content: center;" id="error-join-team" class="error-message">
+              <p style="color: red; font-size: 10px;">mane of team is required and must be more than 1 caracter</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Join Team Section -->
+
+
+      <!--hackaton solo validation-->
+      <div class="section-right-content" id="hackaton-solo-validation">
+        <div
+          style="height: 100%; width: 100%;  display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
+          <div style="height: 30px; display: flex; justify-content: start; width: 100%;">
+            <button class="next-button" id="backButton2">
+              <span class="arrow">←</span> Back
+            </button>
+          </div>
+          <p style="color: white; font-size: 11px; width: 60%; ">You've chosen to join solo. You will need to either
+            select a team or be assigned to one during the hackathon. Please wait for a call or email confirmation
+            regarding your participation.</p>
+          <div style="display: flex; width: 100%; height: 40px; justify-content: end;"> <button
+              class="cancel-button" onclick="handleCancelBtn()">Cancel</button>
+            <button class="validate-button" onclick="submitHackathonForm()">Validate</button>
+          </div>
+        </div>
+      </div>
+      <!--hackaton solo validation-->
+
+
+      <!--hackaton team validation-->
+      <div class="section-right-content" id="hackaton-team-validation">
+        <div
+          style="height: 100%; width: 100%;  display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
+          <div style="height: 30px; display: flex; justify-content: start; width: 100%;">
+            <button class="next-button" id="backButton3">
+              <span class="arrow">←</span> Back
+            </button>
+          </div>
+          <p style="color: white; font-size: 11px; width: 60%; ">You've successfully joined the team! Please confirm
+            your registration and then wait for a call or email confirmation regarding your participation.</p>
+          <div style="display: flex; width: 100%; height: 40px; justify-content: end;"> <button
+              class="cancel-button " onclick="handleCancelBtn()">Cancel</button>
+            <button class="validate-button" onclick="submitHackathonForm()">Validate</button>
+          </div>
+        </div>
+      </div>
+      <!--hackaton team validation-->
+
+
+      <!--worckshope items  -->
+      <div class="section-right-content" id="Workshops-items">
+        <div style="display: flex ; justify-content: space-between; flex-direction: column; height: 100%; width: 100%;">
+          <h1 style="color: #FFFFFF; margin-bottom: 70px; font-size: 18px;">Other informations</h2>
+            <div
+              style="height: 100%; width: 100%; display: flex; gap: 10px;  align-items: center; flex-direction: column; "
+              id="worckshops-container">
+
+            </div>
+            <div style="height: 20px; display: flex; justify-content: end;">
+              <button class="next-button" id="next-join-team">
+                Next <span class="arrow">→</span>
+              </button>
+            </div>
+        </div>
+      </div>
+      <!--end worckshope items -->
+
+      <!-- Best-idea-rools -->
+      <div class="section-right-content" id="Best-idea-rools" style="color: white;">
+        <div style="position: relative; height: 100%; width: 100%;">
+          <div class="main-title">Best Idea Description</div>
+
+          <div class="description">
+            Are you passionate about AI and full of innovative ideas? The AI24 Ideathon – Best AI Idea is your chance to
+            showcase your creativity and problem-solving skills! This competition, held as part of AI24 at the
+            University of 8 May 1945 Guelma, allows students to pitch their AI-driven solutions to industry experts,
+            mentors, and fellow students.
+          </div>
+          <div class="section-title">Why Participate?</div>
+          <div class="description">
+            Are you passionate about AI and full of innovative ideas? The AI24 Ideathon – Best AI Idea is your chance to
+            showcase your creativity and problem-solving skills! This competition, held as part of AI24 at the
+            University of 8 May 1945 Guelma, allows students to pitch their AI-driven solutions to industry experts,
+            mentors, and fellow students.
+          </div>
+          <ul class="participation-list">
+            <li>Pitch Your Idea - Present your AI-based concept to a panel of experts</li>
+            <li>Get Expert Feedback - Receive valuable insights from experienced mentors</li>
+            <li>Expand Your Network - Connect with peers, professionals, and AI enthusiasts</li>
+            <li>Win Prizes & Recognition - The best ideas will be awarded during the event</li>
+          </ul>
+
+          <div class="section-title">How to Participate?</div>
+          <ul class="participation-list">
+            <li>Join Solo or a Team - Work individually or collaborate with teammates</li>
+            <li>Develop Your AI Idea - Address a real-world challenge with an innovative AI solution</li>
+            <li>Prepare a Pitch - Create a concise presentation outlining your idea</li>
+            <li>Submit Your Entry - One team member must submit the solution as a Google Drive link</li>
+          </ul>
+
+          <div class="submission-deadline">
+            Submission Deadline: <span class="deadline-highlight">13/06/2025 at 23:59</span>
+          </div>
+
+          <div class="final-pitch">
+            Final Pitch & Awards: Selected individuals or teams will be invited to present their ideas during AI4
+            (second day)
+          </div>
+
+          <div style="position: absolute; bottom: 10px; right: 0;"> <button class="submit-button"
+              onclick="handleBestIdeaRulesNext()">Submit your
+              solution →</button></div>
+        </div>
+      </div>
+      <!-- end Best-idea-rools -->
+
+      <!-- Workshops-rools -->
+      <div class="section-right-content" id="Workshops-rools">
+        <div style="height: 100%; width: 100%;display: flex; justify-content: space-between; flex-direction: column;">
+          <div> <button class="next-button" id="backButton-workshopRools" onclick="backWorksopRools()">
+              <span class="arrow">←</span> Back
+            </button>
+
+            <div class="container">
+              <p class="info-text">
+                This workshop <span class="highlight">requires a personal computer</span>. If you are unable to bring
+                one, please choose a workshop that does not require a PC.
+              </p>
+
+              <div class="checkbox-group bordered">
+                <div style="height: 30px; width: 1px; background-color: #384A78;"></div>
+                <input type="checkbox" id="confirm-pc">
+                <label for="confirm-pc">I confirm that I will bring my personal computer for this workshop.</label>
+              </div>
+
+              <div class="checkbox-group dark-box">
+                <div style="height: 30px; width: 1px; background-color: transparent;"></div>
+                <input type="checkbox" id="commit-attendance">
+                <label for="commit-attendance">I commit to attending the workshop as scheduled and will make every
+                  effort to be present.</label>
+              </div>
+            </div>
+
+
+          </div>
+          <div style="display: flex ; justify-content: end; margin-top: 20px;height: 30px;"><button class="next-button"
+              onclick='WorkshopsRulesNext()' id='Workshops-rools-next'>
+              Next <span class="arrow">→</span>
+
+            </button></div>
+        </div>
+      </div>
+      <!-- end Workshops-rools-->
+
+      <!-- workshop validation-->
+      <div class="section-right-content" id="Workshops-validation">
+
+        <div
+          style="height: 100%; width: 100%;  display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
+          <div style="height: 30px; display: flex; justify-content: start; width: 100%;">
+            <button class="next-button" id="workshop-back" onclick="backWorkshopValidation()">
+              <span class="arrow">←</span> Back
+            </button>
+          </div>
+          <p style="color: white; font-size: 11px; width: 60%; ">Please confirm your registration to finalize your
+            participation.</p>
+          <div style="display: flex; width: 100%; height: 40px; justify-content: end;"> <button
+              class="cancel-button" onclick="handleCancelBtn()">Cancel</button>
+            <button class="validate-button" onclick="handleSubmitWorkshopForm()">Validate</button>
+          </div>
+        </div>
+
+      </div>
+      <!-- end workshop validation-->
+
+      <!--Best-idea-registration-->
+      <div class="section-right-content" id="Best-idea-registration">
+        <div style="
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      ">
+
+          <div style="height: auto; display: flex; flex-direction: column; gap: 70px;">
+            <button class="next-button" id="backregistration-btn" onclick="bestIdeaRegistrationBack()">
+              <span class="arrow">←</span> Back
+            </button>
+            <div style="display: flex; flex-direction: column; gap: 20px;">
+              <p style="color: white; font-size: 10px;">
+                Please send you ideas Through a google drive link (Accepted formats: Video or
+                PowerPoint)
+              </p>
+              <div class="input-container">
+                <label for="linkedin">Team name</label>
+                <input type="text" id="google-drive-url" placeholder="Enter your team name"
+                  oninput="hideErrorMessage()" />
+                <i class="fa-solid fa-check checkmark"></i>
+              </div>
+              <div class="input-container">
+                <label for="team-name-input">Team members</label>
+                <textarea id="Team-members-input"
+                  placeholder="Write down your team members name ( first name and last name )"
+                  oninput="hideErrorMessage()"></textarea>
+                <i class="fa-solid fa-check checkmark"></i>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div style="display: flex; flex-direction: column; gap: 20px;">
+            <div style="height: 20px; display: flex; justify-content: end; ">
+              <button class="next-button" id="next-best-idea" onclick="bestIdeaRegistrationNext()">
+                Next <span class="arrow">→</span>
+              </button>
+            </div>
+            <div style="width: 100%;display: none; justify-content: center;" id="error-join-team" class="error-message">
+              <p style="color: red; font-size: 10px;">mane of team is required and must be more than 1 caracter</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Best-idea-registration-->
+
+      <div class="section-right-content" id="Best-idea-validation">
+        <div
+          style="height: 100%; width: 100%;  display: flex; flex-direction: column; justify-content: space-between; align-items: center;">
+          <div style="height: 30px; display: flex; justify-content: start; width: 100%;">
+            <button class="next-button" id="workshop-back" onclick="backWorkshopValidation()">
+              <span class="arrow">←</span> Back
+            </button>
+          </div>
+          <p style="color: white; font-size: 11px; width: 60%; ">You've successfully submitted your idea! Please confirm
+            your registration to finalize your submission. You will receive a call or email confirmation regarding the
+            next steps. Good luck!</p>
+          <div style="display: flex; width: 100%; height: 40px; justify-content: end;"> <button
+              class="cancel-button" onclick="handleCancelBtn()">Cancel</button>
+            <button class="validate-button" onclick="handleSubmitBestIdeaForm()">Validate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer style="
+          height: 180px;
+          width: 100%;
+          margin-top: 100px;
+          display: flex;
+          flex-direction: column;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          gap: 20px;
+        ">
+      <div style="
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          " class="footer-images">
+        <img src="./images/forms_images/image2.png" alt="image" style="height: 50px; width: 50px" /><img src="./images/forms_images/image1.png"
+          alt="" style="height: 80px; width: 220px; padding-top: 10px" /><img src="./images/forms_images/image.png" alt=""
+          style="height: 70px; width: 70px" />
+      </div>
+      <div style="
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          ">
+        <p style="
+              color: #ffffff;
+              word-spacing: 10px;
+              letter-spacing: 3px;
+              font-size: 10px;
+            ">
+          ALL RIGHTS RESERVED - TECHGEEKS 2025
+        </p>
+      </div>
+    </footer>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="./js/forms.js"></script>
+</body>
+
+</html>
