@@ -1,32 +1,4 @@
 @font-face {
-  font-family: "Aeonik TRIAL";
-  src: url("../fonts/AeonikTRIAL-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Aeonik TRIAL";
-  src: url("../fonts/AeonikTRIAL-Bold.otf") format("opentype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PP Neue Machina";
-  src: url("../fonts/PPNeueMachina-Regular.otf") format("opentype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "PP Neue Machina";
-  src: url("../fonts/PPNeueMachina-Bold.otf") format("opentype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "PPNeueMachina";
   src: url(../fonts/PPNeueMachina-InktrapLight.otf) format("opentype");
   font-weight: bold;
@@ -45,6 +17,18 @@
   font-weight: medium;
   font-style: normal;
 }
+@font-face {
+  font-family: "Aeonik-TRIAL";
+  src: url(../fonts/AeonikTRIAL-Bold.otf) format("truetype");
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AeonikTRIAL-Light";
+  src: url(../fonts/AeonikTRIAL-Light.otf) format("truetype");
+  font-weight: medium;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -52,14 +36,8 @@
 }
 
 :root {
-  --primary-color: #090d13;
+  --primary-color: #090c12;
   --secondary-color: #172a46;
-  --accent-color: #64ffda;
-  --text-color: #ccd6f6;
-  --text-secondary: #8892b0;
-  --success-color: #00bf63;
-  --button-primary: #1e5c37;
-  --button-secondary: #1c3149;
 }
 
 body {
@@ -69,7 +47,7 @@ body {
   padding-right: 150px;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-family: "Aeonik TRIAL", sans-serif;
+  font-family: "AeonikTRIAL-Light";
 }
 nav {
   position: fixed;
@@ -98,11 +76,12 @@ nav img {
   font-size: 10px;
   margin-left: 20px;
   cursor: pointer;
+  font-family: "AeonikTRIAL-Light";
 }
 
-.nav-links li:hover {
+/* .nav-links li:hover {
   color: var(--accent-color);
-}
+} */
 .menu-icon {
   display: none;
   cursor: pointer;
@@ -113,7 +92,6 @@ nav img {
   display: none;
 }
 section {
-  /* background-color: red; */
   width: 100%;
   height: 100vh;
   margin-top: 70px;
@@ -125,7 +103,6 @@ section {
 .section-left {
   height: auto;
   width: 33%;
-  /* background-color: #64ffda; */
   padding-top: 50px;
 }
 .section-right {
@@ -142,21 +119,10 @@ section {
   padding-left: 20px;
   padding-right: 20px;
 }
-.section-right-header-buttons {
-  height: 70%;
-  width: 80px;
-  border-radius: 11px;
-  background-color: #1d336b12;
-  font-size: 8px;
-  cursor: pointer;
-  border: none;
-  color: #a5b8e9;
-}
-/* ///---------------------------------------- */
 .section-right-content {
   height: 100%;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 30px;
   background-color: #1d336b2b;
   border-radius: 11px;
   padding: 30px;
@@ -197,7 +163,6 @@ section {
   border-image-slice: 1;
 }
 
-/* Active button gets a stronger gradient border */
 .bottom-buttons button.active-border {
   border-image: linear-gradient(90deg, #defe01, #2dbf5a);
   border-image-slice: 1;
@@ -223,30 +188,44 @@ section {
 }
 
 .next-button:hover .arrow {
-  transform: translateX(
-    5px
-  ); /* Moves the arrow slightly to the right on hover */
+  transform: translateX(5px);
 }
-/* .bottom-buttons button:hover {
-  box-shadow: 0 0 10px #defe01, 0 0 20px #2dbf5a;
-  transform: scale(1.05);
-} */
-/* ///-------------------------------- */
-.button-clicked {
-  color: white;
-  font-size: 8px;
+
+textarea {
+  resize: vertical;
+}
+
+.section-right-header-buttons {
+  height: 85%;
+  width: 85px;
+  border-radius: 6px;
+  background-color: #1d336b12;
+  font-size: 10px;
   cursor: pointer;
   border: none;
-  height: 70%;
-  width: 80px;
-  border-radius: 11px;
-  background-color: #1d336b12;
+  color: #a5b8e9;
+  font-family: "AeonikTRIAL-Light";
+  font-weight: 100;
+}
+.button-clicked {
+  color: #fcfcfc;
+  font-size: 12px;
+  cursor: pointer;
+  border: none;
+  height: 85%;
+  width: 85px;
+  border-radius: 6px;
+  background-color: #0d1833;
 }
 .section-left h1 {
-  font-size: 24px;
-  font-family: "PP Neue Machina", sans-serif;
+  font-size: 27px;
+  font-family: "PPNeueMachina";
   margin-bottom: 30px;
   color: white;
+}
+
+.personel-info {
+  font-family: "Aeonik-TRIAL";
 }
 .vertical-line {
   width: 2px;
@@ -268,23 +247,25 @@ section {
   font-size: 14px;
   color: #384a78;
   pointer-events: none;
+  font-family: "AeonikTRIAL-Light";
 }
 
 .input-container input {
   width: 100%;
   padding: 25px 12px 12px 12px;
-  font-size: 12px;
+  font-size: 16px;
   background-color: #1d336b73;
   color: white;
   border: none;
   border-radius: 8px;
   outline: none;
+  font-family: "AeonikTRIAL-Light";
 }
 .input-container input::placeholder {
-  color: #384a78;
+  color: #4d629670;
 }
 .input-container textarea::placeholder {
-  color: #384a78;
+  color: #4d629670;
 }
 .input-container textarea {
   width: 100%;
@@ -336,17 +317,6 @@ section {
   opacity: 0.8;
 }
 
-@media (max-width: 1024px) {
-  .section-right-header-buttons {
-    width: 100%;
-  }
-  .section-right-content {
-    margin-top: 20px;
-  }
-  nav {
-    padding: 0 20px;
-  }
-}
 .back-btn-header {
   height: 30px;
   width: 100%;
@@ -379,9 +349,13 @@ section {
   color: white;
 }
 .description {
-  padding-top: 10px;
-  color: #d1d1d1;
-  line-height: 1.5;
+  /* letter-spacing: 1px; */
+  font-family: "AeonikTRIAL-Light";
+  font-weight: lighter;
+  font-size: 8px;
+  /* leading-trim: Cap height; */
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 .workshpe-description {
   color: white;
@@ -401,67 +375,154 @@ section {
   text-decoration: underline;
 }
 
+/* General Styles */
 .main-title {
-  color: white;
   font-size: 18px;
-  margin-bottom: 10px;
-  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: "AeonikTRIAL-Light", sans-serif;
+  color: #ffffff;
 }
+
 .description {
   color: #ffffff;
-  font-size: 8px;
-  margin-bottom: 20px;
-  line-height: 1.5;
-}
-.section-title {
-  color: white;
   font-size: 14px;
-  margin-top: 20px;
-
-  font-weight: bold;
+  margin-bottom: 20px;
+  font-weight: 100;
+  font-family: "AeonikTRIAL-Light", sans-serif;
 }
+
+.section-title {
+  font-family: "AeonikTRIAL-Light", sans-serif;
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+/* Participation List */
 .participation-list {
   list-style: none;
-  padding-left: 20px;
+  padding: 0;
 }
+
 .participation-list li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+  color: #ffffff;
+  margin-bottom: 14px;
+
+  width: 100%;
+  height: auto;
+  font-size: 12px;
+}
+
+.li-strong {
+  color: #ffffff;
+  font-size: 14px;
+  width: auto;
+  height: auto;
+  font-family: "Aeonik-TRIAL";
+  margin-right: 5px;
+}
+
+/* Submission Details */
+.submission-deadline {
   font-size: 14px;
   color: #d0d0d0;
+  margin-top: 20px;
 }
-.participation-list li::before {
-  content: "•";
+
+.deadline-highlight {
   color: #00ff66;
-  margin-right: 10px;
   font-weight: bold;
 }
 
-.submission-deadline {
-  margin-top: 20px;
-  color: #d0d0d0;
-  font-size: 14px;
-}
-.deadline-highlight {
-  color: #00ff66;
-}
 .final-pitch {
+  font-size: 14px;
   color: #888;
-  font-size: 12px;
   margin-top: 15px;
 }
+
+/* Button */
+.button-container {
+  text-align: right;
+  margin-top: 20px;
+}
+
 .submit-button {
-  display: inline-block;
-  color: #00ff66;
-  text-decoration: none;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
   font-weight: bold;
-  margin-top: 15px;
+  border-radius: 5px;
 }
-.submit-button:hover {
-  text-decoration: underline;
+
+.hidden {
+  display: none !important;
+}
+
+.container {
+  width: 100%;
+  margin-top: 50px;
+}
+
+/* Text Styles */
+.info-text {
+  font-size: 10px;
+  color: white;
+}
+
+.highlight {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.checkbox-group input {
+  width: 15px;
+  height: 15px;
+  accent-color: #3b82f6;
+  appearance: none; /* Reset default styles */
+  border: 1px solid white; /* Ensures consistent size */
+
+  display: flex; /* Helps alignment */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.checkbox-group label {
+  color: white;
+  font-size: 10px;
+}
+.checkbox-group input:checked {
+  background-color: #3b82f6; /* Blue check when selected */
+  border-color: #3b82f6;
+}
+
+.bordered {
+  padding-left: 10px;
+  color: white;
+}
+.dark-box {
+  padding-left: 10px;
+  height: 40px;
+  width: 100%;
+  color: white;
+  background-color: #0d1834;
+}
+.spn {
+  font-family: "Aeonik-TRIAL";
 }
 @media (max-width: 768px) {
+  /* .participation-list li {
+    font-size: 8px;
+  } */
   .section-right-content {
     padding: 0px;
     min-height: 500px;
@@ -518,66 +579,23 @@ section {
     color: black;
   }
 }
-.hidden {
-  display: none !important;
+@media (max-width: 1024px) {
+  .section-right-header {
+    margin-top: 30px;
+  }
+  .section-right-header-buttons {
+    width: 100%;
+  }
+  .section-right-content {
+    margin-top: 20px;
+  }
+  nav {
+    padding: 0 20px;
+  }
 }
-
-.container {
-  width: 100%;
-  margin-top: 50px;
-}
-
-/* Text Styles */
-.info-text {
-  font-size: 10px;
-  color: white;
-}
-
-.highlight {
-  color: #ef4444;
-  font-weight: bold;
-}
-
-.checkbox-group {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  margin-top: 20px;
-}
-
-.checkbox-group input {
-  width: 15px;
-  height: 15px;
-  accent-color: #3b82f6;
-  appearance: none; /* Reset default styles */
-  border: 1px solid white; /* Ensures consistent size */
-
-  display: flex; /* Helps alignment */
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.checkbox-group label {
-  color: white;
-  font-size: 10px;
-}
-.checkbox-group input:checked {
-  background-color: #3b82f6; /* Blue check when selected */
-  border-color: #3b82f6;
-}
-
-.bordered {
-  /* border-left: 4px solid #6b7280; */
-  padding-left: 10px;
-  color: white;
-}
-
-/* Dark Box for Second Checkbox */
-.dark-box {
-  padding-left: 10px;
-  height: 40px;
-  width: 100%;
-  color: white;
-  /* padding-left: 37px; */
-  background-color: #0d1834;
+.green-reqtangle {
+  height: 12px;
+  width: 12px;
+  background-color: #00ff00;
+  margin-right: 10px;
 }

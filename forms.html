@@ -13,7 +13,7 @@
 
 <body>
   <nav>
-    <img src="./images/forms_images/image.png" alt="Logo" />
+    <img src="./images/forms_images/image1.png" alt="Logo" />
     <div class="menu-icon" onclick="toggleMenu()">☰</div>
     <ul class="nav-links">
       <li>Description</li>
@@ -220,8 +220,8 @@
           <p style="color: white; font-size: 11px; width: 60%; ">You've chosen to join solo. You will need to either
             select a team or be assigned to one during the hackathon. Please wait for a call or email confirmation
             regarding your participation.</p>
-          <div style="display: flex; width: 100%; height: 40px; justify-content: end;"> <button
-              class="cancel-button" onclick="handleCancelBtn()">Cancel</button>
+          <div style="display: flex; width: 100%; height: 40px; justify-content: end;"> <button class="cancel-button"
+              onclick="handleCancelBtn()">Cancel</button>
             <button class="validate-button" onclick="submitHackathonForm()">Validate</button>
           </div>
         </div>
@@ -240,8 +240,8 @@
           </div>
           <p style="color: white; font-size: 11px; width: 60%; ">You've successfully joined the team! Please confirm
             your registration and then wait for a call or email confirmation regarding your participation.</p>
-          <div style="display: flex; width: 100%; height: 40px; justify-content: end;"> <button
-              class="cancel-button " onclick="handleCancelBtn()">Cancel</button>
+          <div style="display: flex; width: 100%; height: 40px; justify-content: end;"> <button class="cancel-button "
+              onclick="handleCancelBtn()">Cancel</button>
             <button class="validate-button" onclick="submitHackathonForm()">Validate</button>
           </div>
         </div>
@@ -259,9 +259,9 @@
 
             </div>
             <div style="height: 20px; display: flex; justify-content: end;">
-              <button class="next-button" id="next-join-team">
+              <!-- <button class="next-button" id="next-join-team">
                 Next <span class="arrow">→</span>
-              </button>
+              </button> -->
             </div>
         </div>
       </div>
@@ -285,28 +285,60 @@
             University of 8 May 1945 Guelma, allows students to pitch their AI-driven solutions to industry experts,
             mentors, and fellow students.
           </div>
-          <ul class="participation-list">
-            <li>Pitch Your Idea - Present your AI-based concept to a panel of experts</li>
-            <li>Get Expert Feedback - Receive valuable insights from experienced mentors</li>
-            <li>Expand Your Network - Connect with peers, professionals, and AI enthusiasts</li>
-            <li>Win Prizes & Recognition - The best ideas will be awarded during the event</li>
-          </ul>
+          <div class="participation-list">
+            <li>
+              🟩&nbsp;&nbsp;<span class="li-strong">Join Solo or a Team -</span> Present your
+              AI-based concept to a panel of experts and potential investors.
+            </li>
+            <li>
+              🟩&nbsp;&nbsp;<span class="li-strong">Get Expert Feedback-</span>Receive valuable
+              insights from experienced mentors
+            </li>
+            <li>
+              🟩&nbsp;&nbsp;<span class="li-strong">Expand Your Network -</span> Connect with
+              peers, professionals, and AI enthusiasts
+            </li>
+            <li>
+              🟩&nbsp;&nbsp;<span class="li-strong">Win Prizes & Recognition -</span> The best
+              ideas will be awarded during the event
+            </li>
+
+          </div>
 
           <div class="section-title">How to Participate?</div>
           <ul class="participation-list">
-            <li>Join Solo or a Team - Work individually or collaborate with teammates</li>
-            <li>Develop Your AI Idea - Address a real-world challenge with an innovative AI solution</li>
-            <li>Prepare a Pitch - Create a concise presentation outlining your idea</li>
-            <li>Submit Your Entry - One team member must submit the solution as a Google Drive link</li>
+            <li>
+              🟩&nbsp;&nbsp;<span class="li-strong">Join Solo or as a Team –</span> Work
+              individually or collaborate with teammates.
+            </li>
+            <li>
+              🟩&nbsp;&nbsp;<span class="li-strong">Develop Your AI Idea – </span>Address a
+              real-world challenge with an innovative AI-based solution.
+            </li>
+            <li>
+              🟩&nbsp;&nbsp;<span class="li-strong">Prepare a Pitch -</span>Create a concise
+              presentation outlining your idea, its potential impact, and an implementation plan. <span class="li-strong">(Accepted formats:
+                Video or PowerPoint)</span>
+            </li>
+            <li>
+              🟩&nbsp;&nbsp;<span class="li-strong">Submit Your Entry -</span> One team member must
+              submit the solution as a Google Drive link, and then include the names of all participants.
+            </li>
+
           </ul>
 
-          <div class="submission-deadline">
-            Submission Deadline: <span class="deadline-highlight">13/06/2025 at 23:59</span>
+          <div class="section-title">
+            Submission Deadline:
           </div>
+          <span class="deadline-highlight">13/06/2025 at 23:59</span>
+          <p style="font-size: 10px;">Ensure your submission is sent before this date to be considered.</p>
 
+          <div class="section-title">
+            Final Pitch & Awards:
+          </div>
           <div class="final-pitch">
-            Final Pitch & Awards: Selected individuals or teams will be invited to present their ideas during AI4
-            (second day)
+            Selected individuals or teams will be invited to present their ideas during AI4
+          <span class="li-strong">  (second day)</span> where winners will be announced and rewarded.
           </div>
 
           <div style="position: absolute; bottom: 10px; right: 0;"> <button class="submit-button"
@@ -366,8 +398,8 @@
           </div>
           <p style="color: white; font-size: 11px; width: 60%; ">Please confirm your registration to finalize your
             participation.</p>
-          <div style="display: flex; width: 100%; height: 40px; justify-content: end;"> <button
-              class="cancel-button" onclick="handleCancelBtn()">Cancel</button>
+          <div style="display: flex; width: 100%; height: 40px; justify-content: end;"> <button class="cancel-button"
+              onclick="handleCancelBtn()">Cancel</button>
             <button class="validate-button" onclick="handleSubmitWorkshopForm()">Validate</button>
           </div>
         </div>
@@ -395,18 +427,18 @@
                 PowerPoint)
               </p>
               <div class="input-container">
-                <label for="linkedin">Team name</label>
-                <input type="text" id="google-drive-url" placeholder="Enter your team name"
+                <label for="linkedin">google drive url</label>
+                <input type="text" id="google-drive-url" placeholder="Enter your google drive url"
                   oninput="hideErrorMessage()" />
                 <i class="fa-solid fa-check checkmark"></i>
               </div>
-              <div class="input-container">
+              <!-- <div class="input-container">
                 <label for="team-name-input">Team members</label>
                 <textarea id="Team-members-input"
                   placeholder="Write down your team members name ( first name and last name )"
                   oninput="hideErrorMessage()"></textarea>
                 <i class="fa-solid fa-check checkmark"></i>
-              </div>
+              </div> -->
 
             </div>
           </div>
@@ -437,8 +469,8 @@
           <p style="color: white; font-size: 11px; width: 60%; ">You've successfully submitted your idea! Please confirm
             your registration to finalize your submission. You will receive a call or email confirmation regarding the
             next steps. Good luck!</p>
-          <div style="display: flex; width: 100%; height: 40px; justify-content: end;"> <button
-              class="cancel-button" onclick="handleCancelBtn()">Cancel</button>
+          <div style="display: flex; width: 100%; height: 40px; justify-content: end;"> <button class="cancel-button"
+              onclick="handleCancelBtn()">Cancel</button>
             <button class="validate-button" onclick="handleSubmitBestIdeaForm()">Validate</button>
           </div>
         </div>
@@ -459,9 +491,9 @@
             justify-content: space-between;
             align-items: center;
           " class="footer-images">
-        <img src="./images/forms_images/image2.png" alt="image" style="height: 50px; width: 50px" /><img src="./images/forms_images/image1.png"
-          alt="" style="height: 80px; width: 220px; padding-top: 10px" /><img src="./images/forms_images/image.png" alt=""
-          style="height: 70px; width: 70px" />
+        <img src="./images/forms_images/image2.png" alt="image" style="height: 50px; width: 50px" /><img
+          src="./images/forms_images/image1.png" alt="" style="height: 80px; width: 220px; padding-top: 10px" /><img
+          src="./images/forms_images/image.png" alt="" style="height: 70px; width: 70px" />
       </div>
       <div style="
             height: 10%;

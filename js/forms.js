@@ -234,7 +234,7 @@ async function submitHackathonForm() {
   else
     formData.append(
       "entry.214270301",
-      document.getElementById("team-name-input")?.value.trim()
+      document.getElementById("team-name-input")?.value.trim().toUpperCase()
     );
 
   try {
@@ -305,8 +305,11 @@ const returnToDefaultState = () => {
   }
   showSection("Hackathon-join-solo");
 };
-
+//https://docs.google.com/forms/d/e/1FAIpQLScEYLpFkCX_rbu0Gn7m_Qem4swV7tgndHINKQLALyVnRRJJ6Q/viewform?usp=pp_url&entry.1740379453=id&entry.2066719684=worksop+name&entry.497043887=First+name&entry.760498177=Last+name&entry.949663347=Email&entry.221371961=Phone+number&entry.320736804=University+or+Higher+School&entry.1704422940=Field+of+Study&entry.1157517074=Academic+Leve&entry.2079021364=Company+/+Organization
+const workSopsGoogleDriveLink =
+  "https://docs.google.com/forms/d/e/1FAIpQLScEYLpFkCX_rbu0Gn7m_Qem4swV7tgndHINKQLALyVnRRJJ6Q/formResponse";
 var workshopId = null;
+var workShopName = "";
 const workshopsData = [
   {
     idForm: 0,
@@ -314,7 +317,33 @@ const workshopsData = [
     description:
       "Learn the basics of JavaScript and how to build interactive web pages.",
     date: "June 20, 2025 - 10:00 AM",
-    link: "https://docs.google.com/forms/d/e/1FAIpQLScEYLpFkCX_rbu0Gn7m_Qem4swV7tgndHINKQLALyVnRRJJ6Q/formResponse",
+
+    inputs: [
+      { myId: "firstname", googleFormId: "entry.497043887", isRequired: true },
+      { myId: "lastname", googleFormId: "entry.760498177", isRequired: true },
+      { myId: "email", googleFormId: "entry.949663347", isRequired: true },
+      { myId: "phone", googleFormId: "entry.221371961", isRequired: true },
+      { myId: "university", googleFormId: "entry.320736804", isRequired: true },
+      {
+        myId: "fieldofstudy",
+        googleFormId: "entry.1704422940",
+        isRequired: true,
+      },
+      {
+        myId: "academiclevel",
+        googleFormId: "entry.1157517074",
+        isRequired: true,
+      },
+      { myId: "company", googleFormId: "entry.2079021364", isRequired: true },
+    ],
+  },
+  {
+    idForm: 1,
+    title: "Intro to python",
+    description:
+      "Learn the basics of JavaScript and how to build interactive web pages.",
+    date: "June 20, 2025 - 10:00 AM",
+
     inputs: [
       { myId: "firstname", googleFormId: "entry.497043887", isRequired: true },
       { myId: "lastname", googleFormId: "entry.760498177", isRequired: true },
@@ -336,28 +365,29 @@ const workshopsData = [
   },
 ];
 const workshopsContainer = document.getElementById("worckshops-container");
-workshopsContainer.innerHTML = workshopsData
-  .map(
-    (workshop) => `
-        <div
-                style="height: 70px; width: 100%;  display: flex; justify-content: space-between; flex-direction: column;">
-                <div style="height: 25px;  display: flex; justify-content: space-between ; flex-direction: column;">
-                  <div style="display: flex; justify-content: space-between; align-items: center; padding-left: 10px; padding-right: 10px;">
-                    <h4 style="color:#FFFFFF; font-size: 13px;">${workshop.title}</h4>
-                    <p style="color:#FFFFFF; font-size: 10px;">${workshop.date}</p>
-                    <button class="join-btn" onclick="handleJoin(${workshop.idForm})">join</button>
-                  </div>
-                  <div style="height: 1px; width: 100%; background-color: #FFFFFF;"></div>
-                </div>
-                <div style="height: 50px; padding: 10px; padding-right: 20px;">
-                  <p class="workshpe-description ">
-                    ${workshop.description}
-                </p>
-                </div>
-              </div>
-`
-  )
-  .join("");
+workshopsContainer.innerHTML = workshopsData.map(
+  (workshop) => `
+      <div
+        style="height: 70px; width: 100%; display: flex; justify-content: space-between; flex-direction: column;">
+        <div style="height: 25px; display: flex; justify-content: space-between; flex-direction: column;">
+          <div style="display: flex; justify-content: space-between; align-items: center; padding-left: 10px; padding-right: 10px;">
+            <h4 style="color:#FFFFFF; font-size: 13px;">${workshop.title}</h4>
+            <p style="color:#FFFFFF; font-size: 10px;">${workshop.date}</p>
+            <button class="join-btn" onclick="handleJoin('${workshop.idForm}', '${workshop.title}')">
+              Join
+            </button>
+          </div>
+          <div style="height: 1px; width: 100%; background-color: #FFFFFF;"></div>
+        </div>
+        <div style="height: 50px; padding: 10px; padding-right: 20px;">
+          <p class="workshpe-description">
+            ${workshop.description}
+          </p>
+        </div>
+      </div>
+  `
+);
+
 showSection("Hackathon-join-solo");
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -374,9 +404,10 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-const handleJoin = (id) => {
+const handleJoin = (id, title) => {
+  console.log(1111111111);
   workshopId = id;
-
+  workShopName = title;
   for (const input of workshopsData[workshopId].inputs) {
     const value = document.getElementById(input.myId)?.value.trim();
     if (!value) {
@@ -428,7 +459,8 @@ const backWorksopRools = () => {
 const handleSubmitWorkshopForm = async () => {
   if (workshopId === null) return;
   const formData = new FormData();
-
+  formData.append("entry.1740379453", workshopId);
+  formData.append("entry.2066719684", workShopName);
   workshopsData[workshopId].inputs.forEach((input) => {
     const value = document.getElementById(input.myId)?.value.trim();
     if (value) {
@@ -449,7 +481,7 @@ const handleSubmitWorkshopForm = async () => {
   });
 
   try {
-    const response = await fetch(workshopsData[workshopId].link, {
+    const response = await fetch(workSopsGoogleDriveLink, {
       method: "POST",
       body: formData,
       mode: "no-cors",
@@ -511,11 +543,11 @@ const bestIdeaFormInputs = [
     googleFormId: "entry.2045127902",
     isRequired: true,
   },
-  {
-    myId: "Team-members-input",
-    googleFormId: "entry.1610022562",
-    isRequired: true,
-  },
+  // {
+  //   myId: "Team-members-input",
+  //   googleFormId: "entry.1610022562",
+  //   isRequired: true,
+  // },
 ];
 
 const handleCancelBtn = () => {
