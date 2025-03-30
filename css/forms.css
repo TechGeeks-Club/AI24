@@ -73,15 +73,12 @@ nav img {
 
 .nav-links li {
   color: white;
-  font-size: 10px;
+  font-size: 14px;
   margin-left: 20px;
   cursor: pointer;
   font-family: "AeonikTRIAL-Light";
 }
 
-/* .nav-links li:hover {
-  color: var(--accent-color);
-} */
 .menu-icon {
   display: none;
   cursor: pointer;
