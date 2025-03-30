@@ -41,7 +41,12 @@
 }
 
 body {
-  background-color: var(--primary-color);
+  background: radial-gradient(
+    ellipse 177.46% 352.09% at 50% 38.36%,
+    black 0%,
+    #09173c 63%,
+    #1c2140 89%
+  );
   min-height: 100vh;
   padding-left: 150px;
   padding-right: 150px;
@@ -60,6 +65,10 @@ nav {
   width: 90%;
   padding: 10px 40px;
   height: 50px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Glass effect */
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
 nav img {
