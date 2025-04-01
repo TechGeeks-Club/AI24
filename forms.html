@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
   <title>TechGeeks Registration</title>
   <link rel="stylesheet" href="./css/forms.css" />
+  <link rel="stylesheet" href="./css/re_section9.css">
 </head>
 
 <body>
@@ -83,12 +84,61 @@
           <i class="fa-solid fa-check checkmark"></i>
         </div>
 
-        <div class="input-container">
+        <!-- <div class="input-container">
           <label for="academiclevel">Academic Level</label>
           <input oninput="hideErrorMessage()" type="text" id="academiclevel" placeholder="Enter your level" />
           <i class="fa-solid fa-check checkmark"></i>
+        </div> -->
+<!-- 
+        <div class="input-container">
+          <label for="academiclevel">Academic Level</label>
+          <select id="academiclevel" onchange="hideErrorMessage()">
+            <option value="" disabled selected>Select your academic level</option>
+            <optgroup label="Licence">
+              <option value="Licence 1">Licence 1</option>
+              <option value="Licence 2">Licence 2</option>
+              <option value="Licence 3">Licence 3</option>
+            </optgroup>
+            <optgroup label="Master">
+              <option value="Master 1">Master 1</option>
+              <option value="Master 2">Master 2</option>
+            </optgroup>
+            <optgroup label="Ingénieur">
+              <option value="Ingénieur 1">Ingénieur 1</option>
+              <option value="Ingénieur 2">Ingénieur 2</option>
+              <option value="Ingénieur 3">Ingénieur 3</option>
+              <option value="Ingénieur 4">Ingénieur 4</option>
+              <option value="Ingénieur 5">Ingénieur 5</option>
+            </optgroup>
+          </select>
+          <i class="fa-solid fa-check checkmark"></i>
+        </div> -->
+
+        <div class="input-container">
+          <label for="academiclevel">Academic Level</label>
+          <select id="academiclevel" onchange="hideErrorMessage()">
+            <option value="" disabled selected>Select your academic level</option>
+            <optgroup label="Bachelor's Degree">
+              <option value="Year 1">Year 1</option>
+              <option value="Year 2">Year 2</option>
+              <option value="Year 3">Year 3</option>
+            </optgroup>
+            <optgroup label="Master's Degree">
+              <option value="Master 1">Master 1</option>
+              <option value="Master 2">Master 2</option>
+            </optgroup>
+            <optgroup label="Engineering">
+              <option value="Year 1">Year 1</option>
+              <option value="Year 2">Year 2</option>
+              <option value="Year 3">Year 3</option>
+              <option value="Year 4">Year 4</option>
+              <option value="Year 5">Year 5</option>
+            </optgroup>
+          </select>
+          <i class="fa-solid fa-check checkmark"></i>
         </div>
 
+        
         <div class="input-container">
           <label for="company">Company / Organization</label>
           <input oninput="hideErrorMessage()" type="text" id="company" placeholder="Enter the name of the company" />
@@ -107,10 +157,76 @@
       <div class="section-right-content join-solo" id="Hackathon-join-solo">
         <h4 style="color: #ffffff ;margin-bottom: 30px;">Other informations</h3>
           <div class="left-form" style="display: flex; flex-direction: column; gap: 15px">
-            <div class="input-container">
+            <!-- <div class="input-container">
               <label for="residence">Willaya *</label>
               <input oninput="hideErrorMessage()" type="text" id="residence" placeholder="Enter your willaya"
                 value="Guelma" onchange="hideErrorMessage()" />
+              <i class="fa-solid fa-check checkmark"></i>
+            </div> -->
+
+            <div class="input-container">
+              <label for="residence">Wilaya *</label>
+              <select id="wilaya" onchange="hideErrorMessage()">
+                <option value="">Sélectionnez votre wilaya</option>
+                <option value="Adrar">Adrar</option>
+                <option value="Chlef">Chlef</option>
+                <option value="Laghouat">Laghouat</option>
+                <option value="Oum El Bouaghi">Oum El Bouaghi</option>
+                <option value="Batna">Batna</option>
+                <option value="Béjaïa">Béjaïa</option>
+                <option value="Biskra">Biskra</option>
+                <option value="Béchar">Béchar</option>
+                <option value="Blida">Blida</option>
+                <option value="Bouira">Bouira</option>
+                <option value="Tamanrasset">Tamanrasset</option>
+                <option value="Tébessa">Tébessa</option>
+                <option value="Tlemcen">Tlemcen</option>
+                <option value="Tiaret">Tiaret</option>
+                <option value="Tizi Ouzou">Tizi Ouzou</option>
+                <option value="Alger">Alger</option>
+                <option value="Djelfa">Djelfa</option>
+                <option value="Jijel">Jijel</option>
+                <option value="Sétif">Sétif</option>
+                <option value="Saïda">Saïda</option>
+                <option value="Skikda">Skikda</option>
+                <option value="Sidi Bel Abbès">Sidi Bel Abbès</option>
+                <option value="Annaba">Annaba</option>
+                <option value="Guelma" selected>Guelma</option>
+                <option value="Constantine">Constantine</option>
+                <option value="Médéa">Médéa</option>
+                <option value="Mostaganem">Mostaganem</option>
+                <option value="M'Sila">M'Sila</option>
+                <option value="Mascara">Mascara</option>
+                <option value="Ouargla">Ouargla</option>
+                <option value="Oran">Oran</option>
+                <option value="El Bayadh">El Bayadh</option>
+                <option value="Illizi">Illizi</option>
+                <option value="Bordj Bou Arreridj">Bordj Bou Arreridj</option>
+                <option value="Boumerdès">Boumerdès</option>
+                <option value="El Tarf">El Tarf</option>
+                <option value="Tindouf">Tindouf</option>
+                <option value="Tissemsilt">Tissemsilt</option>
+                <option value="El Oued">El Oued</option>
+                <option value="Khenchela">Khenchela</option>
+                <option value="Souk Ahras">Souk Ahras</option>
+                <option value="Tipaza">Tipaza</option>
+                <option value="Mila">Mila</option>
+                <option value="Aïn Defla">Aïn Defla</option>
+                <option value="Naâma">Naâma</option>
+                <option value="Aïn Témouchent">Aïn Témouchent</option>
+                <option value="Ghardaïa">Ghardaïa</option>
+                <option value="Relizane">Relizane</option>
+                <option value="Timimoun">Timimoun</option>
+                <option value="Bordj Badji Mokhtar">Bordj Badji Mokhtar</option>
+                <option value="Ouled Djellal">Ouled Djellal</option>
+                <option value="Béni Abbès">Béni Abbès</option>
+                <option value="In Salah">In Salah</option>
+                <option value="In Guezzam">In Guezzam</option>
+                <option value="Touggourt">Touggourt</option>
+                <option value="Djanet">Djanet</option>
+                <option value="El M'Ghair">El M'Ghair</option>
+                <option value="El Menia">El Menia</option>
+              </select>
               <i class="fa-solid fa-check checkmark"></i>
             </div>
 
@@ -127,13 +243,24 @@
                 value="https://Link" />
               <i class="fa-solid fa-check checkmark"></i>
             </div>
-
-            <div class="input-container">
+          
+            <!-- <div class="input-container">
               <label for="skills">Technical Skills *</label>
               <textarea oninput="hideErrorMessage()" id="skills" placeholder="List your programming languages, tools..."
                 rows="4"></textarea>
               <i class="fa-solid fa-check checkmark"></i>
-            </div>
+            </div> -->
+         
+       <div class="input-container tags-container">
+        <label for="skills-input">Technical Skills *</label>
+        <div class="tags-input-wrapper">
+          <input type="text" id="skills-input" placeholder="Ajoutez des compétences (JavaScript, Python...)" onkeydown="handleSkillsInput(event)">
+          <div class="tags-list" id="skills-tags"></div>
+        </div>
+        <i class="fa-solid fa-check checkmark"></i>
+        <input type="hidden" id="skills" name="skills">
+      </div>
+       <script src="./js/tags.js"></script>
 
             <div class="input-container">
               <label for="experience">AI Experience *</label>
@@ -476,7 +603,8 @@
         </div>
       </div>
     </div>
-    <footer style="
+
+    <!-- <footer style="
           height: 180px;
           width: 100%;
           margin-top: 100px;
@@ -486,6 +614,7 @@
           padding-bottom: 10px;
           gap: 20px;
         ">
+
       <div style="
             display: flex;
             justify-content: space-between;
@@ -510,7 +639,28 @@
           ALL RIGHTS RESERVED - TECHGEEKS 2025
         </p>
       </div>
-    </footer>
+    </footer> -->
+
+    	<!--! section 09 -->
+	<section class="section-09">
+		<div class="logos">
+			<!-- <img src="images/Group 44.png" alt="text"> -->
+		  <img id="univ-lg" class="logo" src="images/logo 1.png" loading="lazy" alt="University Logo">
+		  <p>&verbar;</p>
+		  <img id="tg-lg" class="logo" src="images/logo.png" loading="lazy" alt="TechGeeks Logo">
+		  <p>&verbar;</p>
+		  <img id="aih-lg" class="logo" src="images/logoColoredPNGWhite 1.png" loading="lazy" alt="Aihouse Logo">
+		</div>
+		  
+		<div id="footer" >
+			<!-- <img id="bdl" class="botm_deco" src="images/Group 42.svg" loading="lazy"> -->
+			<p>A L L R I G H T S R E S E R V E D - T E C H G E E K S 2 0 2 5</p>
+			<!-- <img id="bdr" class="botm_deco" src="images/Group 42.svg" loading="lazy"> -->
+		</div>
+
+	</section>
+
+
   </section>
   <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script src="./js/forms.js"></script>
