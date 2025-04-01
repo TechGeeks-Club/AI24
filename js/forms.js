@@ -152,7 +152,15 @@ document.getElementById("next-join-team").addEventListener("click", () => {
     buttons[1].classList.remove("active-border");
   }
   if (value.length < 2) {
-    document.getElementById("error-join-team").style.display = "flex";
+    Toastify({
+      text: "mane of team is required and must be more than 1 caracter",
+      duration: 2000,
+      gravity: "top",
+      position: "center",
+      backgroundColor: "linear-gradient(to right, #ff416c, #ff4b2b)", // Red gradient for error
+      stopOnFocus: true,
+      close: true,
+    }).showToast();
   } else {
     showSection("hackaton-team-validation");
     isSolo = false;
@@ -210,9 +218,6 @@ function validateHackathonForm(message) {
           backgroundColor: "linear-gradient(to right, #ff416c, #ff4b2b)", // Red gradient for error
           stopOnFocus: true,
           close: true,
-          callback: function () {
-            location.reload(); // Reloads the page after the toast disappears
-          },
         }).showToast();
         return false;
       }
