@@ -170,10 +170,9 @@ document.getElementById("next-join-team").addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".section-right-header button");
 
-  // Ensure there are buttons before modifying classes
   if (buttons.length > 0) {
-    buttons[1].classList.remove("section-right-header-buttons");
-    buttons[1].classList.add("button-clicked");
+    buttons[0].classList.remove("section-right-header-buttons");
+    buttons[0].classList.add("button-clicked");
   }
 
   buttons.forEach((button) => {
@@ -402,7 +401,7 @@ workshopsContainer.innerHTML = workshopsData.map(
   `
 );
 
-showSection("Workshops-items");
+showSection("Hackathon-join-solo");
 
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("hackaton-btn").addEventListener("click", () => {
