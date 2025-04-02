@@ -172,8 +172,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Ensure there are buttons before modifying classes
   if (buttons.length > 0) {
-    buttons[0].classList.remove("section-right-header-buttons");
-    buttons[0].classList.add("button-clicked");
+    buttons[1].classList.remove("section-right-header-buttons");
+    buttons[1].classList.add("button-clicked");
   }
 
   buttons.forEach((button) => {
@@ -318,11 +318,12 @@ const returnToDefaultState = () => {
   }
   showSection("Hackathon-join-solo");
 };
-//https://docs.google.com/forms/d/e/1FAIpQLScEYLpFkCX_rbu0Gn7m_Qem4swV7tgndHINKQLALyVnRRJJ6Q/viewform?usp=pp_url&entry.1740379453=id&entry.2066719684=worksop+name&entry.497043887=First+name&entry.760498177=Last+name&entry.949663347=Email&entry.221371961=Phone+number&entry.320736804=University+or+Higher+School&entry.1704422940=Field+of+Study&entry.1157517074=Academic+Leve&entry.2079021364=Company+/+Organization
+
 const workSopsGoogleDriveLink =
-  "https://docs.google.com/forms/d/e/1FAIpQLSftmLF2_TRSeAhmJryRrq86stD_wpQVYKtqMGIqTMGDaclm-w/formRespons";
+  "https://docs.google.com/forms/d/e/1FAIpQLSftmLF2_TRSeAhmJryRrq86stD_wpQVYKtqMGIqTMGDaclm-w/formResponse";
 var workshopId = null;
 var workShopName = "";
+
 const workshopsData = [
   {
     idForm: 0,
@@ -335,19 +336,19 @@ const workshopsData = [
       { myId: "firstname", googleFormId: "entry.658690704", isRequired: true },
       { myId: "lastname", googleFormId: "entry.1443784", isRequired: true },
       { myId: "email", googleFormId: "entry.249523467", isRequired: true },
-      { myId: "phone", googleFormId: "entry.34071298", isRequired: true },
-      { myId: "university", googleFormId: "entry.820120420", isRequired: true },
+      { myId: "phone", googleFormId: "entry.228551235", isRequired: true },
+      { myId: "university", googleFormId: "entry.34071298", isRequired: true },
       {
         myId: "fieldofstudy",
-        googleFormId: "entry.103198324",
+        googleFormId: "entry.820120420",
         isRequired: true,
       },
       {
         myId: "academiclevel",
-        googleFormId: "entry.1724201722",
+        googleFormId: "entry.103198324",
         isRequired: true,
       },
-      { myId: "company", googleFormId: "entry.2079021364", isRequired: true },
+      { myId: "company", googleFormId: "entry.1724201722", isRequired: true },
     ],
   },
   {
@@ -358,22 +359,22 @@ const workshopsData = [
     date: "June 20, 2025 - 10:00 AM",
 
     inputs: [
-      { myId: "firstname", googleFormId: "entry.497043887", isRequired: true },
-      { myId: "lastname", googleFormId: "entry.760498177", isRequired: true },
-      { myId: "email", googleFormId: "entry.949663347", isRequired: true },
-      { myId: "phone", googleFormId: "entry.221371961", isRequired: true },
-      { myId: "university", googleFormId: "entry.320736804", isRequired: true },
+      { myId: "firstname", googleFormId: "entry.658690704", isRequired: true },
+      { myId: "lastname", googleFormId: "entry.1443784", isRequired: true },
+      { myId: "email", googleFormId: "entry.249523467", isRequired: true },
+      { myId: "phone", googleFormId: "entry.228551235", isRequired: true },
+      { myId: "university", googleFormId: "entry.34071298", isRequired: true },
       {
         myId: "fieldofstudy",
-        googleFormId: "entry.1704422940",
+        googleFormId: "entry.820120420",
         isRequired: true,
       },
       {
         myId: "academiclevel",
-        googleFormId: "entry.1157517074",
+        googleFormId: "entry.103198324",
         isRequired: true,
       },
-      { myId: "company", googleFormId: "entry.2079021364", isRequired: true },
+      { myId: "company", googleFormId: "entry.1724201722", isRequired: true },
     ],
   },
 ];
@@ -401,7 +402,7 @@ workshopsContainer.innerHTML = workshopsData.map(
   `
 );
 
-showSection("Hackathon-join-solo");
+showSection("Workshops-items");
 
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("hackaton-btn").addEventListener("click", () => {
@@ -467,7 +468,7 @@ WorkshopsRulesNext = () => {
 const backWorksopRools = () => {
   showSection("Workshops-items");
 };
-//entry.658690704=jk&entry.1443784=jj&entry.249523467=gg&entry.34071298=hh&entry.820120420=gg&entry.103198324=kjk&entry.1724201722=tt
+
 const handleSubmitWorkshopForm = async () => {
   if (workshopId === null) return;
   const formData = new FormData();
