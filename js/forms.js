@@ -188,23 +188,28 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 var isSolo = true;
 const hackatonFormInputs = [
-  { myId: "firstname", googleFormId: "entry.795312543", isRequired: true },
-  { myId: "lastname", googleFormId: "entry.1970057594", isRequired: true },
-  { myId: "email", googleFormId: "entry.607219518", isRequired: true },
-  { myId: "phone", googleFormId: "entry.2068080515", isRequired: true },
-  { myId: "university", googleFormId: "entry.720148164", isRequired: true },
-  { myId: "fieldofstudy", googleFormId: "entry.1177827940", isRequired: true },
-  { myId: "academiclevel", googleFormId: "entry.1013254986", isRequired: true },
-  { myId: "company", googleFormId: "entry.535972816", isRequired: true },
-  { myId: "residence", googleFormId: "entry.1346684524", isRequired: true },
-  { myId: "github", googleFormId: "entry.1469628877", isRequired: false },
-  { myId: "linkedin", googleFormId: "entry.2095107968", isRequired: false },
-  { myId: "skills", googleFormId: "entry.91360857", isRequired: true },
-  { myId: "experience", googleFormId: "entry.1321980119", isRequired: true },
-  { myId: "motivation", googleFormId: "entry.1429805093", isRequired: true },
+  { myId: "firstname", googleFormId: "entry.1483354039", isRequired: true },
+  { myId: "lastname", googleFormId: "entry.2065580863", isRequired: true },
+  { myId: "email", googleFormId: "entry.249523467", isRequired: true },
+  { myId: "phone", googleFormId: "entry.228551235", isRequired: true },
+  { myId: "university", googleFormId: "entry.34071298", isRequired: true },
+  { myId: "fieldofstudy", googleFormId: "entry.820120420", isRequired: true },
+  { myId: "academiclevel", googleFormId: "entry.103198324", isRequired: true },
+  { myId: "company", googleFormId: "entry.1724201722", isRequired: true },
+  { myId: "residence", googleFormId: "entry.285607389", isRequired: true },
+  { myId: "github", googleFormId: "entry.1563955533", isRequired: false },
+  { myId: "linkedin", googleFormId: "entry.474750178", isRequired: false },
+  { myId: "skills", googleFormId: "entry.1594979086", isRequired: true },
+  { myId: "experience", googleFormId: "entry.419766572", isRequired: true },
+  { myId: "motivation", googleFormId: "entry.822907681", isRequired: true },
 ];
+//entry.1483354039=ghhg&entry.2065580863=jjj&entry.249523467=hjh&entry.228551235=jk&
+// entry.34071298=lml
+// &entry.820120420=,;nlk&entry.103198324=nnj&entry.1724201722=hgf
+// &entry.285607389=huiu&entry.1563955533=hll&entry.474750178=lkl&entry.1594979086=gjhj&
+// entry.419766572=jhku&entry.822907681=kjhku&entry.1808614505=jkh&entry.187582298=jj;,
 const hackatonFormLink =
-  "https://docs.google.com/forms/d/e/1FAIpQLSfXuWcytiPjutkJVNOzP12RHpde88ydfeptdBWCbXa5k3cEog/formResponse";
+  "https://docs.google.com/forms/d/e/1FAIpQLSdB6dDpxIRLuBEoT72yxxcArnyv_DKox1NrlQKVpIA7MdNbnw/formResponse";
 function validateHackathonForm(message) {
   for (const input of hackatonFormInputs) {
     if (input.isRequired) {
@@ -235,12 +240,15 @@ async function submitHackathonForm() {
       formData.append(input.googleFormId, value);
     }
   });
-  if (isSolo) formData.append("entry.214270301", "solo");
-  else
+  if (isSolo) {
+    formData.append("entry.1808614505", "SOLO");
+  } else {
+    formData.append("entry.1808614505", "TEAM");
     formData.append(
-      "entry.214270301",
+      "entry.187582298",
       document.getElementById("team-name-input")?.value.trim().toUpperCase()
     );
+  }
 
   try {
     const response = await fetch(hackatonFormLink, {
@@ -312,7 +320,7 @@ const returnToDefaultState = () => {
 };
 //https://docs.google.com/forms/d/e/1FAIpQLScEYLpFkCX_rbu0Gn7m_Qem4swV7tgndHINKQLALyVnRRJJ6Q/viewform?usp=pp_url&entry.1740379453=id&entry.2066719684=worksop+name&entry.497043887=First+name&entry.760498177=Last+name&entry.949663347=Email&entry.221371961=Phone+number&entry.320736804=University+or+Higher+School&entry.1704422940=Field+of+Study&entry.1157517074=Academic+Leve&entry.2079021364=Company+/+Organization
 const workSopsGoogleDriveLink =
-  "https://docs.google.com/forms/d/e/1FAIpQLScEYLpFkCX_rbu0Gn7m_Qem4swV7tgndHINKQLALyVnRRJJ6Q/formResponse";
+  "https://docs.google.com/forms/d/e/1FAIpQLSftmLF2_TRSeAhmJryRrq86stD_wpQVYKtqMGIqTMGDaclm-w/formRespons";
 var workshopId = null;
 var workShopName = "";
 const workshopsData = [
@@ -324,19 +332,19 @@ const workshopsData = [
     date: "June 20, 2025 - 10:00 AM",
 
     inputs: [
-      { myId: "firstname", googleFormId: "entry.497043887", isRequired: true },
-      { myId: "lastname", googleFormId: "entry.760498177", isRequired: true },
-      { myId: "email", googleFormId: "entry.949663347", isRequired: true },
-      { myId: "phone", googleFormId: "entry.221371961", isRequired: true },
-      { myId: "university", googleFormId: "entry.320736804", isRequired: true },
+      { myId: "firstname", googleFormId: "entry.658690704", isRequired: true },
+      { myId: "lastname", googleFormId: "entry.1443784", isRequired: true },
+      { myId: "email", googleFormId: "entry.249523467", isRequired: true },
+      { myId: "phone", googleFormId: "entry.34071298", isRequired: true },
+      { myId: "university", googleFormId: "entry.820120420", isRequired: true },
       {
         myId: "fieldofstudy",
-        googleFormId: "entry.1704422940",
+        googleFormId: "entry.103198324",
         isRequired: true,
       },
       {
         myId: "academiclevel",
-        googleFormId: "entry.1157517074",
+        googleFormId: "entry.1724201722",
         isRequired: true,
       },
       { myId: "company", googleFormId: "entry.2079021364", isRequired: true },
@@ -410,7 +418,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const handleJoin = (id, title) => {
-  console.log(1111111111);
   workshopId = id;
   workShopName = title;
   for (const input of workshopsData[workshopId].inputs) {
@@ -460,12 +467,12 @@ WorkshopsRulesNext = () => {
 const backWorksopRools = () => {
   showSection("Workshops-items");
 };
-
+//entry.658690704=jk&entry.1443784=jj&entry.249523467=gg&entry.34071298=hh&entry.820120420=gg&entry.103198324=kjk&entry.1724201722=tt
 const handleSubmitWorkshopForm = async () => {
   if (workshopId === null) return;
   const formData = new FormData();
-  formData.append("entry.1740379453", workshopId);
-  formData.append("entry.2066719684", workShopName);
+  formData.append("entry.1483354039", workshopId);
+  formData.append("entry.2065580863", workShopName);
   workshopsData[workshopId].inputs.forEach((input) => {
     const value = document.getElementById(input.myId)?.value.trim();
     if (value) {
@@ -533,28 +540,22 @@ const bestIdeaRegistrationBack = () => {
 };
 
 const bestIdeaGoogleFormUrl =
-  "https://docs.google.com/forms/d/e/1FAIpQLSfRiIGSIycuKwx301sT7MyqQ0xY5jTHOdU5pkwS0fFcgER2Ag/formResponse";
+  "https://docs.google.com/forms/d/e/1FAIpQLSd_-HsJWEiyHAiLqhoLCGsmVHOekfY_U0Vopw2QqNNoEYIYmA/formResponse";
 const bestIdeaFormInputs = [
-  { myId: "firstname", googleFormId: "entry.84305315", isRequired: true },
-  { myId: "lastname", googleFormId: "entry.1425555344", isRequired: true },
-  { myId: "email", googleFormId: "entry.1422391609", isRequired: true },
-  { myId: "phone", googleFormId: "entry.2068080515", isRequired: true }, // Not in the form, kept as is
-  { myId: "university", googleFormId: "entry.1084636349", isRequired: true },
-  { myId: "fieldofstudy", googleFormId: "entry.1705701734", isRequired: true },
-  { myId: "academiclevel", googleFormId: "entry.1968921305", isRequired: true },
-  { myId: "company", googleFormId: "entry.786298061", isRequired: true },
+  { myId: "firstname", googleFormId: "entry.1483354039", isRequired: true },
+  { myId: "lastname", googleFormId: "entry.2065580863", isRequired: true },
+  { myId: "email", googleFormId: "entry.249523467", isRequired: true },
+  { myId: "phone", googleFormId: "entry.228551235", isRequired: true },
+  { myId: "university", googleFormId: "entry.34071298", isRequired: true },
+  { myId: "fieldofstudy", googleFormId: "entry.820120420", isRequired: true },
+  { myId: "academiclevel", googleFormId: "entry.103198324", isRequired: true },
+  { myId: "company", googleFormId: "entry.1724201722", isRequired: true },
   {
     myId: "google-drive-url",
-    googleFormId: "entry.2045127902",
+    googleFormId: "entry.1563955533",
     isRequired: true,
   },
-  // {
-  //   myId: "Team-members-input",
-  //   googleFormId: "entry.1610022562",
-  //   isRequired: true,
-  // },
 ];
-
 const handleCancelBtn = () => {
   location.reload();
 };
@@ -655,3 +656,4 @@ window.addEventListener("scroll", function () {
     navbar.style.backdropFilter = "blur(3px)";
   }
 });
+//https://docs.google.com/forms/d/e/1FAIpQLSfRiIGSIycuKwx301sT7MyqQ0xY5jTHOdU5pkwS0fFcgER2Ag/viewform?usp=pp_url&entry.84305315=First+name&entry.1425555344=Last+name&entry.1422391609=Email&entry.2143329369=Phone+number&entry.1084636349=University+or+Higher+School&entry.1705701734=Field+of+Study&entry.1968921305=Academic+Level&entry.786298061=Company+/+Organization&entry.2045127902=Google+drive+link
