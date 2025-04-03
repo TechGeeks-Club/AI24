@@ -194,12 +194,12 @@ const hackatonFormInputs = [
   { myId: "university", googleFormId: "entry.34071298", isRequired: true },
   { myId: "fieldofstudy", googleFormId: "entry.820120420", isRequired: true },
   { myId: "academiclevel", googleFormId: "entry.103198324", isRequired: true },
-  { myId: "company", googleFormId: "entry.1724201722", isRequired: true },
+  { myId: "company", googleFormId: "entry.1724201722", isRequired: false },
   { myId: "residence", googleFormId: "entry.285607389", isRequired: true },
   { myId: "github", googleFormId: "entry.1563955533", isRequired: false },
   { myId: "linkedin", googleFormId: "entry.474750178", isRequired: false },
   { myId: "skills", googleFormId: "entry.1594979086", isRequired: true },
-  { myId: "experience", googleFormId: "entry.419766572", isRequired: true },
+  { myId: "experience", googleFormId: "entry.419766572", isRequired: false },
   { myId: "motivation", googleFormId: "entry.822907681", isRequired: true },
 ];
 //entry.1483354039=ghhg&entry.2065580863=jjj&entry.249523467=hjh&entry.228551235=jk&
@@ -232,7 +232,8 @@ function validateHackathonForm(message) {
 
 async function submitHackathonForm() {
   const formData = new FormData();
-
+  // formData.append("entry.1724201722", "a");
+  // formData.append("entry.419766572", "a");
   hackatonFormInputs.forEach((input) => {
     const value = document.getElementById(input.myId)?.value.trim();
     if (value) {
@@ -273,6 +274,7 @@ async function submitHackathonForm() {
       },
     }).showToast();
   } catch (error) {
+    console.log("error", error);
     Toastify({
       text: "Registration failed ❌",
       duration: 2000,
