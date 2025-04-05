@@ -551,7 +551,7 @@ const bestIdeaFormInputs = [
   { myId: "university", googleFormId: "entry.34071298", isRequired: true },
   { myId: "fieldofstudy", googleFormId: "entry.820120420", isRequired: true },
   { myId: "academiclevel", googleFormId: "entry.103198324", isRequired: true },
-  { myId: "company", googleFormId: "entry.1724201722", isRequired: true },
+  // { myId: "company", googleFormId: "entry.1724201722", isRequired: false },
   {
     myId: "google-drive-url",
     googleFormId: "entry.1563955533",
