@@ -2,17 +2,23 @@
 const schedules = {
     day1: `
         <div class="schedule-item">
-            <div class="time">9:00 AM - 10:00 AM</div>
+            <div class="time">8:00 AM - 8:30 AM</div>
             <div class="event-details">
-                <div class="event-title">Opening Ceremony</div>
+                <div class="event-title">Welcome and registration</div>
             </div>
+        </div>
+      <div class="schedule-item">
+        <div class="time">8:00 AM - 09:00 AM</div>
+        <div class="event-details">
+         <div class="event-title">Opening Ceremony</div>
+     </div>
         </div>
         <div class="schedule-item">
             <div class="time">10:30 AM - 12:30 PM</div>
             <div class="event-details">
                 <div class="event-title">AI Conferences</div>
                 <div class="event-description">
-                    3 exciting conferences presented by well known figures in the world of artificial intelligence; <span class="highlight">open to everyone</span>
+                    4 exciting conferences presented by well known figures in the world of artificial intelligence; <span class="highlight">open to everyone</span>
                 </div>
             </div>
             <button class="arrow-button">
@@ -27,7 +33,7 @@ const schedules = {
             <div class="event-details">
                 <div class="event-title">AI Workshops</div>
                 <div class="event-description">
-                    4 different workshops, each staring an interesting ai related topic, don't miss out!
+                    2 different workshops, each staring an interesting ai related topic, don't miss out!
                 </div>
             </div>
             <button class="arrow-button">
@@ -44,13 +50,7 @@ const schedules = {
                 <div class="event-description">
                     Teams of up to 5 members will compete to develop AI solutions over 48 hours.
                 </div>
-            </div>
-            <button class="arrow-button">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="12 19 12 5"></polyline> 
-                    <polyline points="6 11 12 5 18 11"></polyline>
-                </svg>
-            </button>    
+            </div>  
         </div>
     `,
     day2: `
@@ -117,7 +117,14 @@ const speakersInfo = {
         name: "Ahmed Khan",
         affiliation: "Guelma University",
         bio: "Leading researcher in AI ethics and responsible innovation. Chair of the Global AI Ethics Committee and author of 'Responsible AI Practices'."
-    }
+    },
+    "speaker-4": {
+        title: "Ethics in Artificial Intelligence",
+        time: "3:30 PM",
+        name: "Ahmed Khan",
+        affiliation: "Guelma University",
+        bio: "Leading researcher in AI ethics and responsible innovation. Chair of the Global AI Ethics Committee and author of 'Responsible AI Practices'."
+    },
 };
 
 // Template du sous-programme avec affichage vertical

@@ -30,7 +30,7 @@
 }
 .sponsor-large img {
     max-width: 100%;
-    max-height: 140px;
+    max-height: auto;
 }
 .sponsor-row {
     grid-column: 1 / 3;
