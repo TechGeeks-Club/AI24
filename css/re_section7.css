@@ -15,7 +15,9 @@
 	min-width: 75%;
 	max-width: 90%;
 }
-
+.sgm{
+    font-family: SpaceGrotesk-Light;
+}
 .sponsor{
     background-color: #0d1326cc;
     border-radius: 10px;
@@ -30,7 +32,7 @@
 }
 .sponsor-large img {
     max-width: 100%;
-    max-height: 140px;
+    max-height: auto;
 }
 .sponsor-row {
     grid-column: 1 / 3;
@@ -59,7 +61,15 @@
         grid-template-columns: 1fr; 
         gap: 15px; 
     }
-
+    #Huawei{
+        padding: 4rem 0rem ;
+    }
+    #Qareeb{
+        padding: 4rem 0rem ;
+    }
+    #bouchebout{
+        padding: 2rem 0rem ;  
+    }
     .sponsor-large {
         padding: 20px; 
         height: auto; 
