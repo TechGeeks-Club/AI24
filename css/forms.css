@@ -494,10 +494,10 @@ textarea {
   width: 15px;
   height: 15px;
   accent-color: #3b82f6;
-  appearance: none; /* Reset default styles */
+  /* appearance: none;  */
   border: 1px solid white; /* Ensures consistent size */
 
-  display: flex; /* Helps alignment */
+  display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;

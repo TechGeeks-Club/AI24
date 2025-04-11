@@ -171,8 +171,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".section-right-header button");
 
   if (buttons.length > 0) {
-    buttons[0].classList.remove("section-right-header-buttons");
-    buttons[0].classList.add("button-clicked");
+    buttons[1].classList.remove("section-right-header-buttons");
+    buttons[1].classList.add("button-clicked");
   }
 
   buttons.forEach((button) => {
@@ -328,10 +328,10 @@ var workShopName = "";
 const workshopsData = [
   {
     idForm: 0,
-    title: "Intro to JavaScript",
+    title: "Benchmarking LLMs in Cybersecurity",
     description:
-      "Learn the basics of JavaScript and how to build interactive web pages.",
-    date: "June 20, 2025 - 10:00 AM",
+      "In this hands-on workshop, participants will explore CyberMetric (https://github.com/cybermetric/CyberMetric), an open-source benchmarking suite for evaluating large language models (LLMs) in cybersecurity contexts.",
+    date: " 14 April | 01:00 - 3:00 PM",
 
     inputs: [
       { myId: "firstname", googleFormId: "entry.658690704", isRequired: true },
@@ -349,15 +349,15 @@ const workshopsData = [
         googleFormId: "entry.103198324",
         isRequired: true,
       },
-      { myId: "company", googleFormId: "entry.1724201722", isRequired: true },
+      // { myId: "company", googleFormId: "entry.1724201722", isRequired: true },
     ],
   },
   {
     idForm: 1,
-    title: "Intro to python",
+    title: "AI in Production",
     description:
-      "Learn the basics of JavaScript and how to build interactive web pages.",
-    date: "June 20, 2025 - 10:00 AM",
+      "This workshop dives into the key principles and best practices for deploying software applications, with a special focus on AI models. Participants will learn how to ensure stability in production environments, and building a scalable applicatios. ",
+    date: "14 April | 01:00 - 3:00 PM",
 
     inputs: [
       { myId: "firstname", googleFormId: "entry.658690704", isRequired: true },
@@ -375,7 +375,59 @@ const workshopsData = [
         googleFormId: "entry.103198324",
         isRequired: true,
       },
-      { myId: "company", googleFormId: "entry.1724201722", isRequired: true },
+      // { myId: "company", googleFormId: "entry.1724201722", isRequired: true },
+    ],
+  },
+  {
+    idForm: 2,
+    title: "NLP Applications",
+    description:
+      "(NLP) including chatbots, sentiment analysis, language translation, text summarization, and information extraction, transforming how machines understand and interact with human language.",
+    date: "15 April | 10:30 AM - 12:15 PM",
+
+    inputs: [
+      { myId: "firstname", googleFormId: "entry.658690704", isRequired: true },
+      { myId: "lastname", googleFormId: "entry.1443784", isRequired: true },
+      { myId: "email", googleFormId: "entry.249523467", isRequired: true },
+      { myId: "phone", googleFormId: "entry.228551235", isRequired: true },
+      { myId: "university", googleFormId: "entry.34071298", isRequired: true },
+      {
+        myId: "fieldofstudy",
+        googleFormId: "entry.820120420",
+        isRequired: true,
+      },
+      {
+        myId: "academiclevel",
+        googleFormId: "entry.103198324",
+        isRequired: true,
+      },
+      // { myId: "company", googleFormId: "entry.1724201722", isRequired: true },
+    ],
+  },
+  {
+    idForm: 3,
+    title: "Huawei ACT Academy",
+    description:
+      "Huawei ACT Academy offers advanced training in cutting-edge technologies, empowering students and professionals with hands-on experience, industry insights, and certifications to thrive in fields like AI, cloud computing, and networking.",
+    date: "15 April | 10:30 AM - 12:15 PM",
+
+    inputs: [
+      { myId: "firstname", googleFormId: "entry.658690704", isRequired: true },
+      { myId: "lastname", googleFormId: "entry.1443784", isRequired: true },
+      { myId: "email", googleFormId: "entry.249523467", isRequired: true },
+      { myId: "phone", googleFormId: "entry.228551235", isRequired: true },
+      { myId: "university", googleFormId: "entry.34071298", isRequired: true },
+      {
+        myId: "fieldofstudy",
+        googleFormId: "entry.820120420",
+        isRequired: true,
+      },
+      {
+        myId: "academiclevel",
+        googleFormId: "entry.103198324",
+        isRequired: true,
+      },
+      // { myId: "company", googleFormId: "entry.1724201722", isRequired: true },
     ],
   },
 ];
@@ -403,7 +455,7 @@ workshopsContainer.innerHTML = workshopsData.map(
   `
 );
 
-showSection("Hackathon-join-solo");
+showSection("Workshops-items");
 
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("hackaton-btn").addEventListener("click", () => {
