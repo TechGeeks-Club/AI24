@@ -268,7 +268,8 @@ function generateSpeakersHTML(speakers) {
             <img src="${speaker.image}" 
                  alt="${speaker.name}" 
                  class="speaker-image"
-                 onerror="this.src='images/default-speaker.png'">
+                 onerror="this.src='images/default-speaker.png'"
+                 loading="lazy">
             <div class="speaker-info">
                 <div class="speaker-name">${speaker.name}</div>
                 <div class="speaker-title">${speaker.title || ''}</div>
