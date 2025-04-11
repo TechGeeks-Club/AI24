@@ -1,4 +1,4 @@
-// Définir les programmes pour chaque jour avec des speakers spécifiques
+// Define schedules for each day
 const schedules = {
     day1: `
         <div class="schedule-item">
@@ -19,14 +19,14 @@ const schedules = {
         </div>
  
         <div class="schedule-item">
-            <div class="time">09:30 AM - 10:00 AM</div>
+            <div class="time">09:30 AM - 09:45 AM</div>
             <div class="event-details">
-                <div class="event-title">Sponsor Presentation</div>
+                <div class="event-title">Sponsor Presentation </div>
                 <div class="event-description">
                     Keynote from our platinum sponsor
                 </div>
             </div>
-            <button class="arrow-button" data-speakers="sponsor-speaker">
+            <button class="arrow-button" data-speakers="sponsor-huawie">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="12 19 12 5"></polyline> 
                     <polyline points="6 11 12 5 18 11"></polyline>
@@ -35,14 +35,30 @@ const schedules = {
         </div>
 
         <div class="schedule-item">
-            <div class="time">10:00 AM - 12:15 PM</div>
+            <div class="time">10:00 AM - 10:45 AM</div>
             <div class="event-details">
-                <div class="event-title">AI Conferences</div>
+                <div class="event-title">AI Conference</div>
                 <div class="event-description">
-                    2 exciting conferences presented by AI experts
+                    Keynote presentation by Dr. Farouq Zitouni
                 </div>
             </div>
-            <button class="arrow-button" data-speakers="conference-speakers-day1">
+            <button class="arrow-button" data-speakers="conference-zitouni">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="12 19 12 5"></polyline> 
+                    <polyline points="6 11 12 5 18 11"></polyline>
+                </svg>
+            </button>
+        </div>
+
+        <div class="schedule-item">
+            <div class="time">10:45 AM - 11:00 AM</div>
+            <div class="event-details">
+                <div class="event-title">Sponsor Presentation</div>
+                <div class="event-description">
+                    Keynote from our platinum sponsor
+                </div>
+            </div>
+            <button class="arrow-button" data-speakers="sponsor-qareeb">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="12 19 12 5"></polyline> 
                     <polyline points="6 11 12 5 18 11"></polyline>
@@ -51,7 +67,7 @@ const schedules = {
         </div>
         
         <div class="schedule-item">
-            <div class="time">01:15 PM - 03:00 PM</div>
+            <div class="time">01:00 PM - 03:00 PM</div>
             <div class="event-details">
                 <div class="event-title">AI Workshops</div>
                 <div class="event-description">
@@ -67,7 +83,7 @@ const schedules = {
         </div>
         
         <div class="schedule-item">
-            <div class="time">03:30 PM</div>
+            <div class="time">03:00 PM - 03:30 PM</div>
             <div class="event-details">
                 <div class="event-title">Hackathon Launch</div>
                 <div class="event-description">
@@ -78,14 +94,14 @@ const schedules = {
     `,
     day2: `
         <div class="schedule-item">
-            <div class="time">09:00 AM - 10:00 AM</div>
+            <div class="time">09:00 AM - 09:45 AM</div>
             <div class="event-details">
-                <div class="event-title">Workshop: Advanced ML Techniques</div>
+                <div class="event-title">AI Conference</div>
                 <div class="event-description">
-                    Hands-on session on cutting-edge ML models
+                    Keynote presentation by Dr. Khaled Halimi
                 </div>
             </div>
-            <button class="arrow-button" data-speakers="workshop-instructor-day2-am">
+            <button class="arrow-button" data-speakers="conference-halimi">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="12 19 12 5"></polyline> 
                     <polyline points="6 11 12 5 18 11"></polyline>
@@ -94,24 +110,38 @@ const schedules = {
         </div>
         
         <div class="schedule-item">
-            <div class="time">10:30 AM - 12:30 PM</div>
+            <div class="time">09:45 AM - 10:30 AM</div>
             <div class="event-details">
-                <div class="event-title">Keynote: AI in Healthcare</div>
+                <div class="event-title"> Ai house projects presentation</div>
+            </div>
+        </div>
+
+        <div class="schedule-item">
+            <div class="time">10:30 AM - 12:15 PM</div>
+            <div class="event-details">
+                <div class="event-title">AI Workshop</div>
                 <div class="event-description">
-                    Transforming medical diagnostics with AI
+                    2 different workshops on AI topics
                 </div>
             </div>
-            <button class="arrow-button" data-speakers="keynote-speaker-day2">
+            <button class="arrow-button" data-speakers="workshop-instructor-day2-am">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <polyline points="12 19 12 5"></polyline> 
                     <polyline points="6 11 12 5 18 11"></polyline>
                 </svg>
-            </button>
+            </button>    
+        </div>
+
+        <div class="schedule-item">
+            <div class="time">01:15 PM - 02:15 PM</div>
+            <div class="event-details">
+                <div class="event-title"> Best idea competition</div>
+            </div>
         </div>
     `,
     day3: `
         <div class="schedule-item">
-            <div class="time">09:00 AM - 10:00 AM</div>
+            <div class="time">03:30 PM - 04:30 PM</div>
             <div class="event-details">
                 <div class="event-title">Final Presentations</div>
                 <div class="event-description">
@@ -121,105 +151,101 @@ const schedules = {
         </div>
         
         <div class="schedule-item">
-            <div class="time">10:30 AM - 12:30 PM</div>
+            <div class="time"> 04:30 PM</div>
             <div class="event-details">
                 <div class="event-title">Closing Ceremony</div>
                 <div class="event-description">
                     Awards and closing remarks
                 </div>
             </div>
-            <button class="arrow-button" data-speakers="closing-speakers">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="12 19 12 5"></polyline> 
-                    <polyline points="6 11 12 5 18 11"></polyline>
-                </svg>
-            </button>
         </div>
     `
 };
 
-// Base de données complète des speakers avec chemins d'images statiques
+// Complete speakers database
 const speakersDatabase = {
     // Sponsors
-    "sponsor-speaker": [
+    "sponsor-huawie": [
         {
             name: "Huawie",
-            time: "09:30 - 09:45 AM",
-            image: "images/R (13) 1.png",
-        },
+            time: "09:30 AM - 09:45 AM",
+            image: "images/Huawei.png",
+        }
+    ],
+    "sponsor-qareeb": [
         {
             name: "Qareeb",
-            time: " 09:45 - 10:00 AM",
-            image: "images/Qareeb.png",
-        },
-    ],
-    
-    // Conférences Jour 1
-    "conference-speakers-day1": [
-        {
-           "name": "Dr. Farouq Zitouni",
-            "title": "Kolmogorov-Arnold Representation Theorem",
-            "time": "10:00 - 10:45 AM",
-            "affiliation": "Kasdi Merbah University - Ouargla",
-            "bio": "Associate Professor in Computer Science at Kasdi Merbah University - Ouargla, Algeria. Ph.D. from Abdelhamid Mehri University of Constantine (2020). Research expertise in machine learning, deep learning, optimization, and metaheuristics. Published extensively in international conferences and peer-reviewed journals.",
-            "image": "images/speaker.png"
-        },
-        {
-            "name": "Dr.Khaled Halimi",
-            "title": "Advanced Machine Learning",
-            "time": "10:45 - 11:00 AM",  
-            "affiliation": "University of Guelma, Algeria | LabSTIC Laboratory",
-            "bio": "Computing Lecturer at the Computer Science Department of Guelma University, Algeria and researcher at the LabSTIC laboratory. Holds a Ph.D. in Computer Science from Annaba University. Specialist in neural network architectures with extensive teaching experience.",
-            "image": "images/speaker.png"
-        },
-    ],
-    
-    // Workshops Jour 1
-    "workshop-instructors-day1": [
-
-        {
-             name: "Dr. Ferrag Mohamed Amine",
-             title: "Benchmarking Large Language Models in Cybersecurity: A Hands-On Workshop",
-             time: "01:30 - 3:00 PM",
-             affiliation: "Researcher in Artificial Intelligence and Cybersecurity",  
-             bio: "Leading expert in AI security and large language models. Developer of CyberMetric, the open-source framework for evaluating LLMs in cybersecurity. Published researcher with multiple papers on AI applications in cryptography, network security, and threat detection. Google Scholar verified author with works cited in top security conferences and journals.",
-             image: "images/speaker.png"
-        },
-        {
-            name: "Pr. Mohammed Nadjib KOUAHLA",
-            title: "????",
-            time: "01:30 - 3:00 PM",  
-            affiliation: "University of Guelma, Algeria | Faculty of Mathematics, Computer Science and Materials Science",
-            bio: "Professor of Computer Science specializing in 3D reconstruction, image processing, and pattern recognition. Extensive research experience with publications in international journals. Active contributor to e-learning technologies. Verified research profiles on Google Scholar, ResearchGate, and Scopus.",
-            image: "images/speaker.png"
+            time: "10:45 AM - 11:00 AM",
+            image: "images/Quareeb.png",
         }
     ],
     
-    // Jour 2
-    "workshop-instructor-day2-am": [{
-        name: "Dr. Elena Petrova",
-        title: "Advanced Neural Architectures",
-        time: "09:00 - 10:00 AM",
-        affiliation: "MIT CSAIL",
-        bio: "Postdoctoral researcher specializing in transformer models and their optimization. Recipient of 2023 AI Rising Star award.",
-        image: "images/dr-elena-petrova.jpg"
-    }],
+    // Conferences
+    "conference-zitouni": [
+        {
+            name: "Dr. Farouq Zitouni",
+            title: "Kolmogorov-Arnold Representation Theorem",
+            time: "10:00 AM - 10:45 AM",
+            affiliation: "Kasdi Merbah University - Ouargla",
+            bio: "Associate Professor in Computer Science at Kasdi Merbah University - Ouargla, Algeria. Ph.D. from Abdelhamid Mehri University of Constantine (2020). Research expertise in machine learning, deep learning, optimization, and metaheuristics. Published extensively in international conferences and peer-reviewed journals.",
+            image: "images/zitouni.png"
+        }
+    ],
+    "conference-halimi": [
+        {
+            name: "Dr. Khaled Halimi",
+            title: "Social Media & AI: When Algorithms Become Weapns or Shields ",
+            time: "09:00 AM - 09:45 AM",  
+            affiliation: "University of Guelma, Algeria | LabSTIC Laboratory",
+            bio: "Computing Lecturer at the Computer Science Department of Guelma University, Algeria and researcher at the LabSTIC laboratory. Holds a Ph.D. in Computer Science from Annaba University. Specialist in neural network architectures with extensive teaching experience.",
+            image: "images/Halimi.png"
+        }
+    ],
     
-    "keynote-speaker-day2": [{
-        name: "Dr. James Wilson",
-        title: "AI in Medical Diagnostics",
-        time: "10:30 - 11:30 AM",
-        affiliation: "Johns Hopkins Medicine",
-        bio: "Leading researcher in medical AI applications. Developed breakthrough algorithms for early cancer detection.",
-        image: "images/dr-james-wilson.jpg"
-    }],
+    // Day 1 Workshops
+    "workshop-instructors-day1": [
+        {
+            name: "Dr. Ferrag Mohamed Amine",
+            title: "Benchmarking Large Language Models in Cybersecurity: A Hands-On Workshop",
+            time: "01:00 PM - 3:00 PM",
+            affiliation: "Researcher in Artificial Intelligence and Cybersecurity",  
+            bio: "Leading expert in AI security and large language models. Developer of CyberMetric, the open-source framework for evaluating LLMs in cybersecurity. Published researcher with multiple papers on AI applications in cryptography, network security, and threat detection. Google Scholar verified author with works cited in top security conferences and journals.",
+            image: "images/Ferrag.png"
+        },
+        {
+            name: "Dr. Zeyd Farhet",
+            title: "AI in Production: From Development to Deployment",
+            time: "01:00 PM - 3:00 PM",
+            affiliation: "AI/ML Engineer | Production AI Specialist",
+            bio: "Experienced AI/ML engineer specializing in deploying machine learning models in production environments. Expert in MLOps practices, model optimization, and scalable AI solutions. Passionate about bridging the gap between research and real-world applications, with hands-on experience in implementing end-to-end AI systems across various industries.",
+            image: "images/zayd.png"
+        }
+    ],
     
-    // Jour 3
+    // Day 2 Workshops
+    "workshop-instructor-day2-am": [
+        {
+            name: "Pr. Mohammed Nadjib KOUAHLA",
+            title: "NLP Applications",
+            time: "10:30 AM - 12:15 PM",  
+            affiliation: "University of Guelma, Algeria | Faculty of Mathematics, Computer Science and Materials Science",
+            bio: "Professor of Computer Science specializing in 3D reconstruction, image processing, and pattern recognition. Extensive research experience with publications in international journals. Active contributor to e-learning technologies. Verified research profiles on Google Scholar, ResearchGate, and Scopus.",
+            image: "images/Kouahla.png"
+        },
+        { 
+            name: "Mr. Aimene imed Eddine Medani",
+            title: "Huawei ACT Academy",
+            time: "10:30 AM - 12:15 PM",
+            image: "images/Aymen_Huwaei.png"
+        }
+    ],
+    
+    // Day 3 Closing
     "closing-speakers": [
         {
             name: "Pr. Ahmed Boudiaf",
             title: "Closing Remarks",
-            time: "10:30 - 11:00 AM",
+            time: "10:30 AM - 11:00 AM",
             affiliation: "University Rector",
             bio: "Academic leader with strong focus on technology education. Oversees university's AI research initiatives.",
             image: "images/pr-ahmed-boudiaf.jpg"
@@ -227,7 +253,7 @@ const speakersDatabase = {
         {
             name: "Ms. Leila Amrouche",
             title: "Awards Ceremony",
-            time: "11:00 - 12:30 PM",
+            time: "11:00 AM - 12:30 PM",
             affiliation: "TechGeeks Director",
             bio: "Organizer of national AI competitions with 5+ years experience in tech community building.",
             image: "images/ms-leila-amrouche.jpg"
@@ -235,7 +261,7 @@ const speakersDatabase = {
     ]
 };
 
-// Fonction pour générer le HTML des speakers avec images statiques
+// Generate HTML for speakers
 function generateSpeakersHTML(speakers) {
     return speakers.map((speaker, index) => `
         <div class="speaker-item ${index === 0 ? 'active' : ''}" data-speaker-id="${speaker.name.replace(/\s+/g, '-').toLowerCase()}">
@@ -254,6 +280,7 @@ function generateSpeakersHTML(speakers) {
     `).join('');
 }
 
+// Show speaker details
 function showSpeakerDetails(event) {
     event.stopPropagation();
     const speakerGroup = event.currentTarget.getAttribute('data-speakers');
@@ -313,7 +340,7 @@ function showSpeakerDetails(event) {
     });
 }
 
-// Initialisation
+// Initialize the application
 document.addEventListener('DOMContentLoaded', () => {
     const scheduleContainer = document.querySelector('.schedule-container');
     if (!scheduleContainer) return;
@@ -333,7 +360,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Attach event listeners to speaker buttons
     function attachSpeakerButtons() {
         document.querySelectorAll('.arrow-button').forEach(button => {
-            button.removeEventListener('click', showSpeakerDetails); // Remove existing to prevent duplicates
+            button.removeEventListener('click', showSpeakerDetails);
             button.addEventListener('click', showSpeakerDetails);
         });
     }
