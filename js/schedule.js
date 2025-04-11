@@ -169,14 +169,14 @@ const speakersDatabase = {
         {
             name: "Huawie",
             time: "09:30 AM - 09:45 AM",
-            image: "images/Huawei.png",
+            image: "images/Huawei.webp",
         }
     ],
     "sponsor-qareeb": [
         {
             name: "Qareeb",
             time: "10:45 AM - 11:00 AM",
-            image: "images/Quareeb.png",
+            image: "images/Quareeb.webp",
         }
     ],
     
@@ -188,7 +188,7 @@ const speakersDatabase = {
             time: "10:00 AM - 10:45 AM",
             affiliation: "Kasdi Merbah University - Ouargla",
             bio: "Associate Professor in Computer Science at Kasdi Merbah University - Ouargla, Algeria. Ph.D. from Abdelhamid Mehri University of Constantine (2020). Research expertise in machine learning, deep learning, optimization, and metaheuristics. Published extensively in international conferences and peer-reviewed journals.",
-            image: "images/zitouni.png"
+            image: "images/zitouni.webp"
         }
     ],
     "conference-halimi": [
@@ -198,7 +198,7 @@ const speakersDatabase = {
             time: "09:00 AM - 09:45 AM",  
             affiliation: "University of Guelma, Algeria | LabSTIC Laboratory",
             bio: "Computing Lecturer at the Computer Science Department of Guelma University, Algeria and researcher at the LabSTIC laboratory. Holds a Ph.D. in Computer Science from Annaba University. Specialist in neural network architectures with extensive teaching experience.",
-            image: "images/Halimi.png"
+            image: "images/Halimi.webp"
         }
     ],
     
@@ -210,7 +210,7 @@ const speakersDatabase = {
             time: "01:00 PM - 3:00 PM",
             affiliation: "Researcher in Artificial Intelligence and Cybersecurity",  
             bio: "Leading expert in AI security and large language models. Developer of CyberMetric, the open-source framework for evaluating LLMs in cybersecurity. Published researcher with multiple papers on AI applications in cryptography, network security, and threat detection. Google Scholar verified author with works cited in top security conferences and journals.",
-            image: "images/Ferrag.png"
+            image: "images/Ferrag.webp"
         },
         {
             name: "Dr. Zeyd Farhet",
@@ -218,7 +218,7 @@ const speakersDatabase = {
             time: "01:00 PM - 3:00 PM",
             affiliation: "AI/ML Engineer | Production AI Specialist",
             bio: "Experienced AI/ML engineer specializing in deploying machine learning models in production environments. Expert in MLOps practices, model optimization, and scalable AI solutions. Passionate about bridging the gap between research and real-world applications, with hands-on experience in implementing end-to-end AI systems across various industries.",
-            image: "images/zayd.png"
+            image: "images/zayd.webp"
         }
     ],
     
@@ -230,13 +230,13 @@ const speakersDatabase = {
             time: "10:30 AM - 12:15 PM",  
             affiliation: "University of Guelma, Algeria | Faculty of Mathematics, Computer Science and Materials Science",
             bio: "Professor of Computer Science specializing in 3D reconstruction, image processing, and pattern recognition. Extensive research experience with publications in international journals. Active contributor to e-learning technologies. Verified research profiles on Google Scholar, ResearchGate, and Scopus.",
-            image: "images/Kouahla.png"
+            image: "images/Kouahla.webp"
         },
         { 
             name: "Mr. Aimene imed Eddine Medani",
             title: "Huawei ACT Academy",
             time: "10:30 AM - 12:15 PM",
-            image: "images/Aymen_Huwaei.png"
+            image: "images/Aymen_Huwaei.webp"
         }
     ],
     
@@ -248,7 +248,7 @@ const speakersDatabase = {
             time: "10:30 AM - 11:00 AM",
             affiliation: "University Rector",
             bio: "Academic leader with strong focus on technology education. Oversees university's AI research initiatives.",
-            image: "images/pr-ahmed-boudiaf.jpg"
+            image: "images/pr-ahmed-boudiaf.webp"
         },
         {
             name: "Ms. Leila Amrouche",
@@ -256,7 +256,7 @@ const speakersDatabase = {
             time: "11:00 AM - 12:30 PM",
             affiliation: "TechGeeks Director",
             bio: "Organizer of national AI competitions with 5+ years experience in tech community building.",
-            image: "images/ms-leila-amrouche.jpg"
+            image: "images/ms-leila-amrouche.webp"
         }
     ]
 };
