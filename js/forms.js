@@ -171,8 +171,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".section-right-header button");
 
   if (buttons.length > 0) {
-    buttons[0].classList.remove("section-right-header-buttons");
-    buttons[0].classList.add("button-clicked");
+    buttons[1].classList.remove("section-right-header-buttons");
+    buttons[1].classList.add("button-clicked");
   }
 
   buttons.forEach((button) => {
@@ -455,7 +455,7 @@ workshopsContainer.innerHTML = workshopsData.map(
   `
 );
 
-showSection("Hackathon-join-solo");
+showSection("Workshops-items");
 
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("hackaton-btn").addEventListener("click", () => {
